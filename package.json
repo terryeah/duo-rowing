@@ -1,0 +1,17 @@
+{
+    "name": "duo-rowing",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vite",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.77.5",
+        "vite": "^5.3.0"
+    }
+}
