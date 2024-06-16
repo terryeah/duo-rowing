@@ -1,0 +1,15 @@
+nav {
+    ul {
+        list-style: none;
+        
+        li {
+            &:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Mundial';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local( 'MundialThin' ),
+    url( '/fonts/MundialThin.woff2' ) format( 'woff2' ),
+    url( '/fonts/MundialThin.woff' ) format( 'woff' ),
+    url( '/fonts/MundialThin.eot' ) format( 'eot' ),
+}
+
+@font-face {
+    font-family: 'Mundial';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local( 'MundialRegular' ),
+    url( '/fonts/MundialRegular.woff2' ) format( 'woff2' ),
+    url( '/fonts/MundialRegular.woff' ) format( 'woff' ),
+    url( '/fonts/MundialRegular.eot' ) format( 'eot' ),
+}
+
+@font-face {
+    font-family: 'Mundial';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local( 'MundialBold' ),
+    url( '/fonts/MundialBold.woff2' ) format( 'woff2' ),
+    url( '/fonts/MundialBold.woff' ) format( 'woff' ),
+    url( '/fonts/MundialBold.eot' ) format( 'eot' ),
+}
+
+@font-face {
+    font-family: 'Mundial';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local( 'MundialBlack' ),
+    url( '/fonts/MundialBlack.woff2' ) format( 'woff2' ),
+    url( '/fonts/MundialBlack.woff' ) format( 'woff' ),
+    url( '/fonts/MundialBlack.eot' ) format( 'eot' ),
+}
