@@ -8,7 +8,7 @@ export function pageRouter() {
     const app = document.querySelector('.app');
 
     if (path === '/home' || path === '/') {
-        document.title = 'Home';
+        document.title = 'Duo Rowing';
         app.innerHTML = Home();
     } else if (path === '/product') {
         document.title = 'Product - Wheels';

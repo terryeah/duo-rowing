@@ -1,0 +1,9 @@
+section.divider {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+
+	&> div {
+		background-color: #000000;
+		height: 4px;
+	}
+}
