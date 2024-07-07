@@ -1,7 +1,7 @@
-import { Home } from '../views/pages/home';
-import { Product } from '../views/pages/product';
-import { About } from '../views/pages/about';
-import { Contact } from '../views/pages/contact';
+import Home from '../views/pages/home';
+import Product from '../views/pages/product';
+import About from '../views/pages/about';
+import Contact from '../views/pages/contact';
 
 export function pageRouter() {
     const path = window.location.pathname;
@@ -26,5 +26,5 @@ export function pageRouter() {
 
 export function navigateTo(url) {
     history.pushState(null, null, url);
-    router();
+    pageRouter();
 }

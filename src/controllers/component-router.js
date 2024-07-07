@@ -1,5 +1,5 @@
-import { Header } from '../views/components/header';
-import { Nav } from '../views/components/nav';
+import Header from '../views/components/global/header';
+import Nav from '../views/components/global/nav';
 
 export function componentRouter() {
     const header = document.querySelector('header');
