@@ -1,13 +1,14 @@
 import hero from './hero';
+import divider from '../../components/global/divider';
 
 export default function Home() {
-    const section = document.createElement('section');
-    section.classList.add('hero');
+    const heroSection = document.createElement('section');
 
-    section.innerHTML = `
+    heroSection.classList.add('hero');
+    heroSection.innerHTML = `
         ${hero().outerHTML}
-        <!-- Other home page content -->
+        ${divider()}
     `;
 
-    return section.outerHTML;
+    return heroSection.outerHTML;
 }
