@@ -23,6 +23,7 @@ git clone https://github.com/terryeah/duo-rowing.git
 cd duo-rowing
 npm install
 ```
+Note: This project was built with Node.js version 20. Ensure you have the correct Node.js version installed.
 
 <br>
 
