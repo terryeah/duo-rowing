@@ -1,5 +1,5 @@
 import hero from './hero';
-import divider from '../../components/global/divider';
+import createDivider from '../../components/global/divider';
 
 export default function Home() {
     const heroSection = document.createElement('section');
@@ -7,7 +7,7 @@ export default function Home() {
     heroSection.classList.add('hero');
     heroSection.innerHTML = `
         ${hero().outerHTML}
-        ${divider()}
+        ${createDivider('left-aligned').outerHTML}
     `;
 
     return heroSection.outerHTML;

@@ -1,0 +1,20 @@
+.divider-wrapper {
+	width: 100%;
+
+	.divider {
+		background-color: #000000;
+		height: 4px;
+		margin-top: 15rem;
+		margin-bottom: 15rem;
+		width: 65%;
+
+		&.left-aligned {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&.right-aligned {
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+}
