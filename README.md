@@ -80,7 +80,7 @@ This project uses the trunk-based development method. All developers should work
 3. **Pull Latest Changes**
 	Always pull the latest changes from the `main` branch before starting any work to avoid conflicts.
    ```bash
-   git checkout main
+   git pull origin main
    ```
 4. **Make Changes**
 	Make your code changes as needed.
