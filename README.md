@@ -103,5 +103,5 @@ This project uses the trunk-based development method. All developers should work
 <br>
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+This project is licensed under the MIT License.
 
