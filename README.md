@@ -82,8 +82,7 @@ This project uses the trunk-based development method. All developers should work
    ```bash
    git pull origin main
    ```
-4. **Make Changes**
-<br>
+4. **Make Changes**<br>
 	Make your code changes as needed.
 5. **Add Changes**
 	Stage the changes you have made.
