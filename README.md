@@ -3,7 +3,7 @@
 ## Project Overview
 Duo Rowing is a single-page application (SPA) built using vanilla JavaScript, SCSS, and Vite. The project structure includes dynamic loading of different sections based on the URL path, modularised components, and a focus on responsive design.
 
-<br><br>
+<br>
 
 ## Table of Contents
 - [Installation](#installation)
@@ -11,9 +11,10 @@ Duo Rowing is a single-page application (SPA) built using vanilla JavaScript, SC
 - [Project Structure](#project-structure)
 - [Components](#components)
 - [Controllers and Scripts](#controllers-and-scripts)
+- [Git Workflow](#git-workflow)
 - [License](#license)
 
-<br><br>
+<br>
 
 ## Installation
 To get started with the Duo Rowing project, clone the repository and install the dependencies.
@@ -24,7 +25,7 @@ cd duo-rowing
 npm install
 ```
 
-<br><br>
+<br>
 
 ## Usage
 To run the project locally, use the following command:
@@ -35,7 +36,7 @@ npm run dev
 
 This will start the Vite development server, and you can view the project in your browser at http://localhost:5173.
 
-<br><br>
+<br>
 
 ## Project Structure
 The project is organised into the following main directories and files:
@@ -65,7 +66,7 @@ duo-rowing/
 ├── package.json
 └── vite.config.mjs
 
-<br><br>
+<br>
 
 ## Components
 
@@ -75,7 +76,7 @@ The divider component is used to create a visual separation between sections of 
 ### Home Page
 The home page dynamically includes the hero section and a divider with a class name `left-aligned` by default.
 
-<br><br>
+<br>
 
 ## Controllers and Script
 
@@ -88,7 +89,48 @@ Scripts are used for specific functionalities such as handling UI interactions a
 ### Relationship with View Files
 The view files define the structure of the components and pages in the application. Controllers and scripts interact with these view files to dynamically load content, handle user events, and update the UI as needed. For example, a controller might load a specific view based on the URL path, while a script might handle a button click event within that view to show or hide certain elements.
 
-<br><br>
+<br>
+
+## Git Workflow
+
+### Trunk-Based Development
+This project uses the trunk-based development method. All developers should work on the `main` branch. As this is a simple project, there is no need for multiple branches. All changes should be committed directly to the `main` branch.
+
+### Using Git on the Main Branch
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/terryeah/duo-rowing.git
+   cd duo-rowing
+   ```
+2. **Check Out the Main Branch**
+   Ensure you are on the `main` branch before making any changes.
+   ```bash
+   git checkout main
+   ```
+3. **Pull Latest Changes**
+	Always pull the latest changes from the `main` branch before starting any work to avoid conflicts.
+   ```bash
+   git checkout main
+   ```
+4. **Make Changes**
+	Make your code changes as needed.
+5. **Add Changes**
+	Stage the changes you have made.
+   ```bash
+	git add .
+   ```
+6. **Commit Changes**
+	Commit your changes with a meaningful message.
+   ```bash
+	git commit -m "Your commit message"
+   ```
+7. **Push Changes**
+	Push your changes to the remote repository.
+   ```bash
+	git push origin main
+   ```
+
+<br>
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more information.
