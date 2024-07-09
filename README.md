@@ -8,7 +8,6 @@ Duo Rowing is a single-page application (SPA) built using vanilla JavaScript, SC
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Components](#components)
 - [Controllers and Scripts](#controllers-and-scripts)
 - [Git Workflow](#git-workflow)
@@ -35,36 +34,6 @@ npm run dev
 ```
 
 This will start the Vite development server, and you can view the project in your browser at http://localhost:5173.
-
-<br>
-
-## Project Structure
-The project is organised into the following main directories and files:
-
-duo-rowing/
-├── dist/
-├── node_modules/
-├── public/
-│   ├── fonts/
-│   ├── images/
-│   └── index.html
-├── src/
-│   ├── controllers/
-│   ├── scripts/
-│   ├── styles/
-│   │   ├── configurations/
-│   │   ├── components/
-│   │   └── sections/
-│   ├── views/
-│   │   ├── components/
-│   │   └── pages/
-│   ├── duo-rowing-ogLO4MuO.js
-│   ├── duo-rowing-Bo0Q5ygK.css
-│   └── index-DYurBFqH.js
-├── .gitignore
-├── LICENSE
-├── package.json
-└── vite.config.mjs
 
 <br>
 
