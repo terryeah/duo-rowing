@@ -1,4 +1,5 @@
-# :rowboat: Duo Rowing
+# :rowboat: Duo Rowing 
+Initial website template for Duo Rowing
 
 ## Project Overview
 Duo Rowing is a single-page application (SPA) built using vanilla JavaScript, SCSS, and Vite. The project structure includes dynamic loading of different sections based on the URL path, modularised components, and a focus on responsive design.
@@ -8,8 +9,7 @@ Duo Rowing is a single-page application (SPA) built using vanilla JavaScript, SC
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Components](#components)
-- [Controllers and Scripts](#controllers-and-scripts)
+- [Project Workflow](#project-workflow)
 - [Git Workflow](#git-workflow)
 - [License](#license)
 
@@ -38,17 +38,18 @@ This will start the Vite development server, and you can view the project in you
 
 <br>
 
-## Components
+## Project Workflow
 
-### Divider
-The divider component is used to create a visual separation between sections of the page. It consists of a divider-wrapper div containing a divider div, with customisable class names.
+### Views
+Let's discuss the `Views` files first. <br>
 
-### Home Page
-The home page dynamically includes the hero section and a divider with a class name `left-aligned` by default.
+The `Views` files define the structure of the components and pages in the application. For example, `src/views/pages/home/index.js` creates the markup layout of the Home page by generating a section element with the class name `hero` and incorporating several components in the `Home()` function. <br>
 
-<br>
+At the top of the file, `hero` and `createDivider` are imported from their respective directories to be part of the Home layout. Moving forward, additional components for the Home page (also based on section tags) should be created and imported into the `src/views/pages/home/index.js` file. <br>
 
-## Controllers and Script
+Component locations vary depending on their intended usage. If a component is to be reused across the web application, it should be created in `src/views/components/global/`. If it is meant to be used only once, it should be created within the Pages directory, `src/views/pages/xxxx/`. <br>
+
+An imported component can be utilised in this format: `${component-name.output}`. You can also pass a class name, similar to how `createDivider` passes a class name of `left-aligned`.
 
 ### Controllers
 Controllers are responsible for handling the routing and logic of the application. They manage how different views are loaded and how the application state changes in response to user interactions.
@@ -57,7 +58,7 @@ Controllers are responsible for handling the routing and logic of the applicatio
 Scripts are used for specific functionalities such as handling UI interactions and DOM manipulations. They work alongside controllers to implement the desired behaviors and features.
 
 ### Relationship with View Files
-The view files define the structure of the components and pages in the application. Controllers and scripts interact with these view files to dynamically load content, handle user events, and update the UI as needed. For example, a controller might load a specific view based on the URL path, while a script might handle a button click event within that view to show or hide certain elements.
+ Controllers and scripts interact with these view files to dynamically load content, handle user events, and update the UI as needed. For example, a controller might load a specific view based on the URL path, while a script might handle a button click event within that view to show or hide certain elements.
 
 <br>
 
@@ -104,4 +105,3 @@ This project uses the trunk-based development method. All developers should work
 
 ## License
 This project is licensed under the MIT License.
-
