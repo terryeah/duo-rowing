@@ -8,6 +8,9 @@ export default function Contact() {
             ${hero().outerHTML}
         </section>
         <!-- Other home page content -->
+        <div>
+            <p>Contact message test</p>
+        </div>
     `;
 
     return contactPage.outerHTML;
