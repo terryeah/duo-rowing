@@ -9,6 +9,12 @@ export default function Home() {
     heroSection.innerHTML = `
         ${hero().outerHTML}
         ${createDivider('left-aligned').outerHTML}
+
+        <section>
+            <div>
+                <h3>Home message test</3>
+            </div>
+        </section>
     `;
 
     return heroSection.outerHTML;
