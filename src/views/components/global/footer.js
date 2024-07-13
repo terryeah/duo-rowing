@@ -1,7 +1,5 @@
-export default function Footer(){
+export default function footer(){
     return `
-        <div>
-            <img class="footer-logo" src="/images/mobile-menu.svg" alt="Footer logo" width="380" height="286" />
-        </div>
+        <div>Test</div>
     `;
 }
