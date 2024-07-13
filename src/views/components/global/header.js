@@ -1,5 +1,6 @@
 export default function Header() {
-    return `
+    const header = document.createElement('header');
+    header.innerHTML = `
         <div class="row">
             <div class="col">
                 <img class="main-logo" src="/images/logo.svg" alt="Logo" width="61" height="51" />
@@ -9,4 +10,6 @@ export default function Header() {
             </div>
         </div>
     `;
+
+    return header;
 }

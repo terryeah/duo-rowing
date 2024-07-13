@@ -1,7 +1,7 @@
 export default function Hero() {
     const productHero = document.createElement('div');
 
-    productHero.innerHTML = '<h1>Product Hero</h1>';
+    productHero.innerHTML = '<h2>Product Hero</h2>';
 
     return productHero;
 }

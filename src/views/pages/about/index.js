@@ -1,4 +1,7 @@
+import Header from '../../components/global/header';
+import Nav from '../../components/global/nav';
 import hero from './hero';
+import Footer from '../../components/global/footer';
 
 export default function About() {
     const aboutPage = document.createElement('div');
@@ -10,5 +13,10 @@ export default function About() {
         <!-- Other home page content -->
     `;
 
-    return aboutPage.outerHTML;
+    return `
+        ${Header().outerHTML}
+        ${Nav().outerHTML}
+        ${aboutPage.outerHTML}
+        ${Footer().outerHTML}
+    `;
 }

@@ -1,4 +1,4 @@
-function initialiseNav() {
+export function initialiseNav() {
     const mobileMenu = document.querySelector('header .mobile-menu');
     const nav = document.querySelector('nav');
 

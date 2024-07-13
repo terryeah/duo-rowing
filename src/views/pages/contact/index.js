@@ -1,4 +1,7 @@
+import Header from '../../components/global/header';
+import Nav from '../../components/global/nav';
 import hero from './hero';
+import Footer from '../../components/global/footer';
 
 export default function Contact() {
     const contactPage = document.createElement('div');
@@ -13,5 +16,10 @@ export default function Contact() {
         </div>
     `;
 
-    return contactPage.outerHTML;
+    return `
+        ${Header().outerHTML}
+        ${Nav().outerHTML}
+        ${contactPage.outerHTML}
+        ${Footer().outerHTML}
+    `;
 }

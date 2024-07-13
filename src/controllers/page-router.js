@@ -2,6 +2,7 @@ import Home from '../views/pages/home';
 import Product from '../views/pages/product';
 import About from '../views/pages/about';
 import Contact from '../views/pages/contact';
+import { initialiseNav } from '../scripts/components/nav';
 
 export function pageRouter() {
     const path = window.location.pathname;
@@ -22,6 +23,8 @@ export function pageRouter() {
     } else {
         app.innerHTML = Home();
     }
+
+    initialiseNav();
 }
 
 export function navigateTo(url) {

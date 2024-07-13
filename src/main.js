@@ -1,10 +1,9 @@
 import { navigateTo } from './controllers/router';
 import { pageRouter } from './controllers/page-router';
-import { componentRouter } from './controllers/component-router';
+import { initialiseNav } from './scripts/components/nav';
 
 document.addEventListener('DOMContentLoaded', () => {
     pageRouter();
-    componentRouter();
     window.navigateTo = navigateTo;
 
     import('./scripts/duo-rowing.js');
@@ -12,5 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('popstate', () => {
     pageRouter();
-    componentRouter();
+    initialiseNav();
 });
