@@ -1,5 +1,6 @@
 import hero from './hero';
 import createDivider from '../../components/global/divider';
+import Footer from '../../components/global/footer';
 
 export default function Home() {
     const heroSection = document.createElement('section');
@@ -15,6 +16,8 @@ export default function Home() {
                 <h3>Home message test</3>
             </div>
         </section>
+
+        ${Footer().outerHTML}
     `;
 
     return heroSection.outerHTML;
