@@ -1,1 +1,0 @@
-function t(){const e=document.querySelector("header .mobile-menu"),n=document.querySelector("nav");e&&n&&e.addEventListener("click",()=>{n.classList.toggle("d-none")})}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",t):t();
