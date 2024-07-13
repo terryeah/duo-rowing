@@ -52,13 +52,13 @@ Component locations vary depending on their intended usage. If a component is to
 An imported component can be utilised in this format: `${component-name.output}`. You can also pass a class name, similar to how `createDivider` passes a class name of `left-aligned`.
 
 ### Controllers
-Controllers are responsible for handling the routing and logic of the application. They manage how different views are loaded and how the application state changes in response to user interactions.
+Controllers are responsible for handling the routing and logic of the application. They manage how different views are loaded and how the application state changes in response to user interactions. For example, the `pageRouter` function in `src/controllers/page-router.js` handles the navigation between different views based on the URL path.
 
 ### Scripts
-Scripts are used for specific functionalities such as handling UI interactions and DOM manipulations. They work alongside controllers to implement the desired behaviors and features.
+Scripts are used for specific functionalities such as handling UI interactions and DOM manipulations. They work alongside controllers to implement the desired behaviors and features. For example, `src/scripts/components/nav.js` contains the logic to initialise the navigation menu and handle the mobile menu interactions.
 
 ### Relationship with View Files
- Controllers and scripts interact with these view files to dynamically load content, handle user events, and update the UI as needed. For example, a controller might load a specific view based on the URL path, while a script might handle a button click event within that view to show or hide certain elements.
+ Controllers and scripts interact with these view files to dynamically load content, handle user events, and update the UI as needed. For example, a controller might load a specific view based on the URL path, while a script might handle a button click event within that view to show or hide certain elements. For example, a controller might load a specific view based on the URL path, while a script might handle a button click event within that view to show or hide certain elements. The initialiseNav function ensures that the mobile menu is correctly initialised whenever the view is updated.
 
 <br>
 
