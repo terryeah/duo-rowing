@@ -3,6 +3,7 @@ import Nav from '../../components/global/nav';
 import hero from './hero';
 import createDivider from '../../components/global/divider';
 import HomeProducts from './home-products.js';
+import Mission from './mission.js';
 import Footer from '../../components/global/footer';
 
 export default function Home() {
@@ -13,9 +14,6 @@ export default function Home() {
         ${hero().outerHTML}
         ${createDivider('left-aligned').outerHTML}
 
-        <section>
-            <img src="/images/home_02.webp" alt="Home mission">
-        </section>
     `;
 
     return `
@@ -23,6 +21,7 @@ export default function Home() {
         ${Nav().outerHTML}
         ${heroSection.outerHTML}
         ${HomeProducts().outerHTML}
+        ${Mission().outerHTML}
         ${Footer().outerHTML}
     `;
 }
