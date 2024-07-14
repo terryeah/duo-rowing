@@ -20,6 +20,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 </p>
+                <button type="button" id="btn">Find out more</button>
             </div>
             <div>
                 <img src="/images/home_01.webp" alt="Home products">
