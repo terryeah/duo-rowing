@@ -12,7 +12,7 @@ export default function Home() {
         ${hero().outerHTML}
         ${createDivider('left-aligned').outerHTML}
 
-        <div>
+        <div class="image-describer">
             <div>
                 <p>Products</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
