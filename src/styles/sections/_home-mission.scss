@@ -1,4 +1,9 @@
-.home-mission.scss{
+.home-mission{
+    .mission-box {
+        width:520px;
+        height:633px;
+        background-color: $primary;
+    }
     
     .product-description {
         padding-right: 217px;
