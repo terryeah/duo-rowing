@@ -76,6 +76,24 @@ div .hero-image {
   width: 100%;
 }
 
+.home-products {
+  display: flex;
+  margin: 0 182px 215px 176px;
+}
+.home-products .product-description {
+  padding-right: 217px;
+}
+.home-products .product-description p {
+  margin-bottom: 30px;
+}
+
+.home-mission.scss .product-description {
+  padding-right: 217px;
+}
+.home-mission.scss .product-description p {
+  margin-bottom: 30px;
+}
+
 .image-describer {
   display: flex;
   flex-direction: column;
@@ -98,16 +116,5 @@ div .hero-image {
 .divider-wrapper .divider.right-aligned {
   margin-left: auto;
   margin-right: 0;
-}
-
-.home-products {
-  display: flex;
-  margin: 0 182px 215px 176px;
-}
-.home-products .product-description {
-  padding-right: 217px;
-}
-.home-products .product-description p {
-  margin-bottom: 30px;
 }
 /*# sourceMappingURL=duo-rowing.css.map */
