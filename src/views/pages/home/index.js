@@ -11,6 +11,7 @@ export default function Home() {
     heroSection.innerHTML = `
         ${hero().outerHTML}
         ${createDivider('left-aligned').outerHTML}
+        <div>Home contents</div>
     `;
 
     return `
