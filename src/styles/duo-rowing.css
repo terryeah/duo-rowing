@@ -100,7 +100,14 @@ div .hero-image {
   margin-right: 0;
 }
 
-.home-products div {
+.home-products {
   display: flex;
+  margin: 0 182px 215px 176px;
+}
+.home-products .product-description {
+  padding-right: 217px;
+}
+.home-products .product-description p {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=duo-rowing.css.map */
