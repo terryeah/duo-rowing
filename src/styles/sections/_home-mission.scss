@@ -1,15 +1,32 @@
 .home-mission{
+    .mission-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
     .mission-box {
         width:520px;
         height:633px;
         background-color: $primary;
+
+        position: absolute;
+        top: 184px;
+        left: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none; 
     }
     
     .product-description {
-        padding-right: 217px;
-
         p {
             margin-bottom:30px;
+            color: #fff;
         }
     }
 }
