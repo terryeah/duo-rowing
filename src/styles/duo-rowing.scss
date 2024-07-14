@@ -9,3 +9,9 @@
 @import "./sections/image-describers";
 
 @import "./components/divider";
+
+.home-products{
+    div {
+        display:flex;
+    }
+}
