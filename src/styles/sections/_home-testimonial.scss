@@ -11,9 +11,7 @@
         width: 321px;
         height: 421px;
         background-color: $primary; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 50px 20px;
 
         &:not(:last-child) { 
             margin-right: 71px;
