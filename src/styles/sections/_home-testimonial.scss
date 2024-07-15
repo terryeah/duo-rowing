@@ -1,3 +1,24 @@
 .home-testimonial{
+    margin: 212px 167px 0px 168px;
 
+    .testimonial-container{
+        display: flex;
+    }
+
+    .testimonial-box{
+        width: 321px;
+        height: 421px;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 71px;
+
+        .product-description {
+            p {
+                margin-bottom:30px;
+                color: #fff;
+            }
+        }
+    }
 }

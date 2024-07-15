@@ -24,6 +24,7 @@ export default function Home() {
         ${HomeProducts().outerHTML}
         ${Mission().outerHTML}
         ${Testimonial().outerHTML}
+        ${createDivider('right-aligned').outerHTML}
         ${Footer().outerHTML}
     `;
 }
