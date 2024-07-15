@@ -1,12 +1,41 @@
 .home-products{
     display:flex;
     margin: 0 182px 215px 176px;
+    font-weight: 200;
 
-    .product-description {
-        padding-right: 217px;
+    .product-textbox{
+        height: 408px;
+        width: 367px;
+        margin-top: 14px;
+        margin-right:217px;
+        border-left:solid black 1px;
+        position: relative;
 
-        p {
-            margin-bottom:30px;
+        .textbox-line{
+            position: absolute;
+            top:42px;
+            width: 3px;
+            height:58px;
+            background-color: black;
         }
+
+        .textbox-title{
+            font-size: 20px;
+            font-weight:400;
+            padding-top:42px;
+            margin-left: 12px;
+        }
+
+        .textbox-text{
+            font-size: 20px;
+            padding-top: 30px;
+            margin-left: 12px;
+        }
+    }
+
+    .product-button{
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left:12px;
     }
 }
