@@ -1,22 +1,27 @@
-.home-testimonial{
-    margin: 212px 167px 0px 168px;
+.home-testimonial {
+    max-width: 1180px;
+    margin: auto;
+    margin-top: 233px;
 
-    .testimonial-container{
+    .testimonial-container {
         display: flex;
     }
 
-    .testimonial-box{
+    .testimonial-box {
         width: 321px;
         height: 421px;
-        background-color: $primary;
+        background-color: $primary; 
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 71px;
+
+        &:not(:last-child) { 
+            margin-right: 71px;
+        }
 
         .product-description {
             p {
-                margin-bottom:30px;
+                margin-bottom: 30px;
                 color: #fff;
             }
         }

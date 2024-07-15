@@ -112,9 +112,33 @@ div .hero-image {
   color: #fff;
 }
 
+.home-testimonial {
+  margin: 212px 167px 0px 168px;
+}
+.home-testimonial .testimonial-container {
+  display: flex;
+}
+.home-testimonial .testimonial-box {
+  width: 321px;
+  height: 421px;
+  background-color: #252830;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 71px;
+}
+.home-testimonial .testimonial-box .product-description p {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
 .image-describer {
   display: flex;
   flex-direction: column;
+}
+
+footer .footer-container {
+  display: flex;
 }
 
 .divider-wrapper {

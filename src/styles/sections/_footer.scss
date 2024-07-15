@@ -1,0 +1,66 @@
+footer {
+    margin-bottom:90px;
+
+    .footer-box {
+      display: flex;
+      max-width: 1180px;
+      margin: auto;
+  
+      .footer-logo {
+        width: 100%;
+        
+        img {
+          width: 100%;
+        }
+      }
+  
+      .contact {
+        position: relative;
+        width: 100%;
+  
+        .contact-text {
+          position: absolute;
+          left: 50px;
+          top: 50px;
+        }
+  
+        .contact-info {
+          position: absolute;
+          left: 50px;
+          top: 151px;
+        }
+      }
+  
+      .index {
+        position: relative;
+        width: 100%;
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          position: absolute;
+          top: 60px;
+          left: 50px;
+        }
+  
+        li:not(:last-child) {
+          padding-bottom: 15px;
+        }
+      }
+  
+      .form {
+        width: 100%;
+        position: relative;
+  
+        .form-txt {
+          position: absolute;
+          bottom: 150px;
+        }
+  
+        .form-box {
+          position: absolute;
+          top: 100px;
+        }
+      }
+    }
+}
