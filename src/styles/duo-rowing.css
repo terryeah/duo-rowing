@@ -87,11 +87,29 @@ div .hero-image {
   margin-bottom: 30px;
 }
 
-.home-mission.scss .product-description {
-  padding-right: 217px;
+.home-mission .mission-container {
+  position: relative;
+  display: inline-block;
 }
-.home-mission.scss .product-description p {
+.home-mission img {
+  display: block;
+  width: 100%;
+}
+.home-mission .mission-box {
+  width: 520px;
+  height: 633px;
+  background-color: #252830;
+  position: absolute;
+  top: 184px;
+  left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.home-mission .product-description p {
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .image-describer {

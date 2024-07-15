@@ -4,6 +4,7 @@ import hero from './hero';
 import createDivider from '../../components/global/divider';
 import HomeProducts from './home-products.js';
 import Mission from './mission.js';
+import Testimonial from './testimonial.js';
 import Footer from '../../components/global/footer';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         ${heroSection.outerHTML}
         ${HomeProducts().outerHTML}
         ${Mission().outerHTML}
+        ${Testimonial().outerHTML}
         ${Footer().outerHTML}
     `;
 }
