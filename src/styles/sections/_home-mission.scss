@@ -1,4 +1,6 @@
 .home-mission{
+    font-weight: 200;
+
     .mission-container {
         position: relative;
         display: inline-block;
@@ -9,24 +11,56 @@
         width: 100%;
     }
 
-    .mission-box {
+    .mission-contentsbox {
         width:520px;
         height:633px;
         background-color: $primary;
-
         position: absolute;
         top: 184px;
         left: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        pointer-events: none; 
-    }
-    
-    .product-description {
-        p {
-            margin-bottom:30px;
+
+        .mission-box{
+            height:493px;
+            width:405px;
+            margin-left:60px;
+            margin-top:70px;
             color: #fff;
+
+            .mission-textbox{
+                width:380px;
+                height:401px;
+                margin-top:14px;
+                border-left:solid #fff 1px;
+                position: relative;
+
+                .textbox-line{
+                    position: absolute;
+                    top:42px;
+                    width: 3px;
+                    height:58px;
+                    background-color: #fff;
+                }
+            }
+
+            .textbox-title{
+                font-size: 20px;
+                font-weight:400;
+                padding-top:42px;
+                margin-left: 12px;
+            }
+    
+            .textbox-text{
+                font-size: 20px;
+                padding-top: 30px;
+                margin-left: 12px;
+            }
+
+            .mission-button{
+                font-size: 20px;
+                margin-top: 30px;
+                margin-left:12px;
+            }
         }
     }
+    
 }
