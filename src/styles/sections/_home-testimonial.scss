@@ -1,57 +1,60 @@
 .home-testimonial {
-    font-weight: 200;
-    margin-top: 233px;
-
-    .testimonial-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .testimonial-contentsbox {
-        width: 321px;
-        height: 421px;
-        background-color: $primary; 
-        color: #fff;
-
-        &:not(:last-child) { 
-            margin-right: 71px;
+    @media (min-width: $xl){
+        font-weight: 200;
+        margin-top: 233px;
+    
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
         }
-
-        .testimonial-box{
-            height:344px;
-            width:269px;
-            margin-left:27px;
-            margin-top: 38px;
-
-            .testimonial-textbox{
-                margin-top:14px;
-                border-left:solid #fff 1px;
-                position: relative;
-
-                .textbox-line{
-                    position: absolute;
-                    top:42px;
-                    width: 3px;
-                    height:45px;
-                    background-color: #fff;
-                }
-
-                .textbox-title{
-                    font-size: 20px;
-                    padding-top:42px;
-                    margin-left: 12px;
-
-                    .title-main{
-                        font-weight:400;
-                        margin-bottom:5px;
+    
+        .testimonial-contentsbox {
+            width: 321px;
+            height: 421px;
+            background-color: $primary; 
+            color: #fff;
+    
+            &:not(:last-child) { 
+                margin-right: 71px;
+            }
+    
+            .testimonial-box{
+                height:344px;
+                width:269px;
+                margin-left:27px;
+                margin-top: 38px;
+    
+                .testimonial-textbox{
+                    margin-top:14px;
+                    border-left:solid #fff 1px;
+                    position: relative;
+    
+                    .textbox-line{
+                        position: absolute;
+                        top:42px;
+                        width: 3px;
+                        height:45px;
+                        background-color: #fff;
                     }
-                }
-        
-                .textbox-text{
-                    padding-top: 30px;
-                    margin-left: 12px;
+    
+                    .textbox-title{
+                        font-size: 20px;
+                        padding-top:42px;
+                        margin-left: 12px;
+    
+                        .title-main{
+                            font-weight:400;
+                            margin-bottom:5px;
+                        }
+                    }
+            
+                    .textbox-text{
+                        padding-top: 30px;
+                        margin-left: 12px;
+                    }
                 }
             }
         }
     }
+ 
 }

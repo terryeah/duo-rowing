@@ -7,7 +7,7 @@ export default function Mission() {
             <img src="/images/home_02.webp" alt="Home mission">
             <div class="mission-contentsbox">
             <div class="mission-box">
-                <div>Mission</div>
+                <div class="title">Mission</div>
                 <div>
                     <div class="mission-textbox">
                         <div class="textbox-line"></div>
