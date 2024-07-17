@@ -1,45 +1,211 @@
 .home-products{
-    @media (min-width: $xl){
-        display:flex;
-        justify-content: center;
-        margin-bottom: 215px;
+    @media (min-width: $sm){
         font-weight: 200;
-    
-        .product-textbox{
-            height: 408px;
-            width: 367px;
-            margin-top: 14px;
-            margin-right:217px;
-            border-left:solid black 1px;
-            position: relative;
-    
-            .textbox-line{
-                position: absolute;
-                top:42px;
-                width: 3px;
-                height:58px;
-                background-color: black;
+        margin-bottom:80px;
+
+        .product-container{
+            display:flex;
+            max-width: 921px;
+            margin:auto;
+        }
+
+        .product-textcontainer{
+            margin-left: 70px;
+            height:246px;
+            width:202px;
+
+            .title{
+                font-size: 8px;
             }
+
+            .product-textbox{
+                width:190px;
+                height:200px;
+                border-left:solid black 1px;
+                margin-top:7px;
+                position: relative;
     
-            .textbox-title{
-                font-size: 20px;
-                font-weight:400;
-                padding-top:42px;
-                margin-left: 12px;
-            }
-    
-            .textbox-text{
-                font-size: 20px;
-                padding-top: 30px;
-                margin-left: 12px;
+                .textbox-line{
+                    position: absolute;
+                    top:19px;
+                    width: 2px;
+                    height:32px;
+                    background-color: black;
+                    
+                }
+        
+                .textbox-title{
+                    font-size: 10px;
+                    font-weight:400;
+                    padding-top:21px;
+                    margin-left: 6px;
+                }
+        
+                .textbox-text{
+                    font-size: 10px;
+                    padding-top: 20px;
+                    margin-left: 6px;
+                }
             }
         }
-    
+
         .product-button{
-            font-size: 20px;
+            font-size: 10px;
+            margin-top: 15px;
+            margin-left:6px;
+        }
+
+        img{
+            margin-left: 90px;
+            width:60%;
+            height:auto;
+        }
+
+
+    }
+
+
+
+    @media (min-width: $md){
+
+        .product-textcontainer{
+            margin-left: 90px;
+            height:295px;
+            width:243px;
+
+            .title{
+                font-size: 10px;
+            }
+
+            .product-textbox{
+                width:228px;
+                height:240px;
+                margin-top:8px;
+    
+                .textbox-line{
+                    top:25px;
+                    width: 2px;
+                    height:38px;
+                }
+        
+                .textbox-title{
+                    font-size: 12px;
+                    font-weight:400;
+                    padding-top:26px;
+                    margin-left: 10px;
+                }
+        
+                .textbox-text{
+                    font-size: 12px;
+                    padding-top: 23px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .product-button{
+            font-size: 12px;
+            margin-top: 18px;
+            margin-left:10px;
+        }
+
+
+    }
+
+
+    @media (min-width: $lg){
+
+        .product-textcontainer{
+            margin-left: 70px;
+            width:416px;
+            height:506px;
+
+            .title{
+                font-size:12px;
+            }
+
+            .product-textbox{
+                height:320px;
+                width:324px;
+                margin-top: 14px;
+    
+                .textbox-line{
+                    top:33px;
+                    width: 3px;
+                    height:46px;
+                }
+        
+                .textbox-title{
+                    font-size: 16px;
+                    padding-top:33px;
+                    margin-left: 12px;
+                }
+        
+                .textbox-text{
+                    font-size: 16px;
+                    padding-top: 30px;
+                    margin-left: 12px;
+                }
+            }
+        }
+
+        .product-button{
+            font-size: 16px;
             margin-top: 30px;
             margin-left:12px;
         }
+
+        img{
+            width:70%;
+        }
+
+
     }
+
+    @media (min-width: $xl){
+        .product-container{
+            max-width: 1180px;
+        }
+
+        .product-textcontainer{
+            margin-left: 130px;
+            width:520px;
+            height:633px;
+
+            .title{
+                font-size:16px;
+            }
+
+            .product-textbox{
+                width:380px;
+                height:401px;
     
+                .textbox-line{
+                    top:42px;
+                    height:58px;
+                }
+        
+                .textbox-title{
+                    font-size: 20px;
+                    padding-top:42px;
+                }
+        
+                .textbox-text{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .product-button{
+            font-size: 20px;
+        }
+
+        img{
+            margin-left: 70px;
+            width:80%;
+        }
+
+
+    }
+
 }
