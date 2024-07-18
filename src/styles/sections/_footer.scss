@@ -1,11 +1,11 @@
 footer {
-  @media (min-width: $xl){
+  @media (min-width: $sm){
     margin-bottom:90px;
     font-weight:200;
 
     .footer-box {
       display: flex;
-      max-width: 1180px;
+      max-width: 600px;
       margin: auto;
   
       .footer-logo {
@@ -22,31 +22,34 @@ footer {
   
         .contact-text {
           position: absolute;
-          left: 50px;
-          top: 50px;
+          left:10px;
+          top: 25px;
+          font-size:10px;
         }
   
         .contact-info {
           position: absolute;
-          left: 50px;
-          top: 151px;
+          left: 10px;
+          top: 70px;
+          font-size:10px;
         }
       }
   
       .index {
         position: relative;
-        width: 100%;
+        width: 80%;
   
         ul {
           list-style: none;
           padding: 0;
           position: absolute;
-          top: 60px;
-          left: 50px;
+          top: 12px;
+          left: 25px;
+          font-size:10px;
         }
   
         li:not(:last-child) {
-          padding-bottom: 15px;
+          padding-bottom: 10px;
         }
       }
   
@@ -56,15 +59,148 @@ footer {
   
         .form-txt {
           position: absolute;
-          bottom: 150px;
+          top: 20px;
+          font-size:10px;
         }
   
         .form-box {
           position: absolute;
+          top: 35px;
+          width: 100%; 
+      
+          textarea {
+              width: 100%; 
+              height: auto;
+              resize: vertical; 
+              font-size:10px;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  @media (min-width: $md){
+    .footer-box {
+      max-width: 720px;
+  
+      .contact {
+  
+        .contact-text {
+          left:20px;
+          top: 40px;
+        }
+  
+        .contact-info {
+          left: 20px;
+          top: 90px;
+        }
+      }
+  
+      .index {
+        width: 100%;
+  
+        ul {
+          top: 30px;
+          left: 40px;
+        }
+      }
+  
+      .form {
+
+        .form-txt {
+          top: 30px;
+        }
+  
+        .form-box {
+          top: 50px;
+
+        }
+      }
+    }
+  }
+
+
+  @media (min-width: $lg){
+
+    .footer-box {
+      max-width: 890px;
+  
+      .contact {
+  
+        .contact-text {
+          left:30px;
+          top: 50px;
+          font-size:14px;
+        }
+  
+        .contact-info {
+          left: 30px;
+          top: 100px;
+          font-size:14px;
+        }
+      }
+  
+      .index {
+  
+        ul {
+          left: 50px;
+          font-size:14px;
+        }
+  
+      }
+  
+      .form {
+  
+        .form-txt {
+          top: 20px;
+          font-size:14px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $xl){
+    .footer-box {
+      max-width: 1180px;
+  
+      .contact {
+
+        .contact-text {
+          left: 50px;
+        }
+  
+        .contact-info {
+          left: 50px;
+          top: 151px;
+        }
+      }
+  
+      .index {
+  
+        ul {
+          top: 60px;
+        }
+  
+        li:not(:last-child) {
+          padding-bottom: 15px;
+        }
+      }
+  
+      .form {
+  
+        .form-txt {
+          top: 50px;
+        }
+  
+        .form-box {
           top: 100px;
         }
       }
     }
   }
+
+ 
     
 }
