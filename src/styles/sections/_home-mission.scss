@@ -216,9 +216,16 @@
         
     }
 
-    @media (min-width: $xxl){
-        img{
-            width:110%;
+    @media (min-width: 1441px){
+        max-width: 1530px;
+        margin: auto; 
+        display: flex;
+        justify-content: center; 
+        position: relative; 
+    
+        img {
+            width: 1440px; 
+            display: block;
         }
     }
     
