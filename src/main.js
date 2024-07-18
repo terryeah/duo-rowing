@@ -1,3 +1,4 @@
+import './styles/duo-rowing.scss';
 import { navigateTo } from './controllers/router';
 import { pageRouter } from './controllers/page-router';
 import { initialiseNav } from './scripts/components/nav';
