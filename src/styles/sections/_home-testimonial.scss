@@ -1,4 +1,63 @@
 .home-testimonial {
+    @media only screen and (max-width: 639px) {
+        font-weight: 200;
+        margin-top: 100px;
+    
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: screen;
+
+        }
+    
+        .testimonial-contentsbox {
+            height:300px;
+            width:190px;
+            background-color: $primary; 
+            color: #fff;
+            margin-bottom: 10px;
+
+            .testimonial-box{
+                height:240px;
+                width:152px;
+                margin-left:10px;
+                margin-top: 24px;
+                font-size: 10px;
+    
+                .testimonial-textbox{
+                    margin-top:8px;
+                    border-left:solid #fff 1px;
+                    position: relative;
+    
+                    .textbox-line{
+                        position: absolute;
+                        top:20px;
+                        width: 2px;
+                        height:34px;
+                        background-color: #fff;
+                    }
+    
+                    .textbox-title{
+                        font-size: 14px;
+                        padding-top:22px;
+                        margin-left: 12px;
+    
+                        .title-main{
+                            font-weight:400;
+                            margin-bottom:5px;
+                        }
+                    }
+            
+                    .textbox-text{
+                        padding-top: 19px;
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+
     @media (min-width: $sm){
         font-weight: 200;
         margin-top: 100px;
