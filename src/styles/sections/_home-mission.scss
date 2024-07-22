@@ -1,4 +1,11 @@
 .home-mission{
+    @media only screen and (max-width: 639px) {
+        /*Set this temporarily to test responsive CSS on footer.scss*/
+        img{
+            width:50%;
+        }
+    
+    }
     @media (min-width: $sm){
         font-weight: 200;
 

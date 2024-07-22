@@ -1,4 +1,91 @@
 footer {
+  @media only screen and (max-width: 639px) {
+    font-weight:200;
+    margin-bottom:90px;
+
+    .footer-box{
+      .footer-logo {
+        max-width: screen;
+        justify-content: center;
+        margin:auto;
+        width: 60%;
+  
+        img {
+          width: 100%;
+  
+        }
+      }
+  
+      .contact {
+        max-width: screen;
+        justify-content: center;
+        margin:auto;
+        width:90%;
+
+  
+        .contact-text {
+          font-weight: 400;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+  
+        .contact-info {
+          text-align: center;
+        }
+      }
+  
+      .index {
+        max-width: screen;
+        justify-content: center;
+        margin:auto;
+        width:90%;
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          text-align: center;
+        }
+  
+        li:not(:last-child) {
+          padding-bottom: 10px;
+        }
+      }
+
+      .form {
+        max-width: screen;
+        justify-content: center;
+        margin:auto;
+        margin-top: 30px;
+        width:90%;
+  
+        .form-txt {
+          text-align: center;
+          font-size:14px;
+        }
+  
+        .form-box {
+          max-width: screen;
+          justify-content: center;
+          margin:auto;
+          width:90%;
+      
+          textarea {
+            max-width: screen;
+            justify-content: center;
+            margin:auto;
+            margin-top: 10px;
+            width:100%;
+            height: auto;
+            resize: vertical; 
+          }
+
+        }
+      }
+    }
+    
+
+}
+
   @media (min-width: $sm){
     margin-bottom:90px;
     font-weight:200;
