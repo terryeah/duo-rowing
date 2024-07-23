@@ -1,5 +1,5 @@
 .home-products{
-    @media only screen and (max-width: 509px) {
+    @media only screen and (max-width: 639px) {
         font-weight: 200;
         margin-bottom:80px;
 
@@ -60,73 +60,6 @@
 
     }
 
-    @media(min-width: 510px){
-        font-weight: 200;
-        margin-bottom:80px;
-
-        .product-container{
-            display:flex;
-            max-width: screen;
-            justify-content: space-around;
-            margin:auto;
-            padding: 0px 30px;
-        }
-
-        .product-textcontainer{
-            margin-left: 30px;
-            height:246px;
-            width:100%;
-
-            .title{
-                font-size: 8px;
-            }
-
-            .product-textbox{
-                width:190px;
-                height:200px;
-                border-left:solid black 1px;
-                margin-top:7px;
-                position: relative;
-    
-                .textbox-line{
-                    position: absolute;
-                    top:19px;
-                    width: 2px;
-                    height:32px;
-                    background-color: black;
-                    
-                }
-        
-                .textbox-title{
-                    font-size: 10px;
-                    font-weight:400;
-                    padding-top:21px;
-                    margin-left: 6px;
-                }
-        
-                .textbox-text{
-                    font-size: 10px;
-                    padding-top: 20px;
-                    margin-left: 6px;
-                }
-            }
-        }
-
-        .product-button{
-            font-size: 10px;
-            margin-top: 15px;
-            margin-left:6px;
-        }
-
-        img{
-            padding-right: 5px;
-            width:100%;
-            height:auto;
-        }
-
-
-
-    }
 
     @media (min-width: $sm){
         font-weight: 200;
