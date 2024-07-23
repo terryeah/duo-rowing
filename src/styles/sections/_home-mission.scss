@@ -10,7 +10,8 @@
             width: 260px;
             height: 310px;
             background-color: $primary;
-            margin-left:20px;
+            max-width: screen;
+            margin: auto;
     
             .mission-box{
                 height:246px;
