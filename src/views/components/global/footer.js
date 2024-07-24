@@ -23,15 +23,18 @@ export default function Footer(){
                         <li>Contact</li>
                     </ul>
                 </div>
-                <div class="form">
+                <form class="form">
                     <div class="form-txt">
                         Hava a question? Leave a message
                     </div>
                     <div class="form-box">
                         <textarea name="" id="" cols="30" rows="5" placeholder="Write a message!"></textarea>
                     </div>
+					<div>
+						<button type="submit">Submit</button>
+					</div>
                 </div>
-            </div>   
+            </div>
         </div>
     `;
 
