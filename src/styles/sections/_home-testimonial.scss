@@ -3,27 +3,21 @@
         font-weight: 200;
         margin-top: 100px;
     
-        .testimonial-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            max-width: screen;
-
-        }
-    
         .testimonial-contentsbox {
-            height:300px;
-            width:190px;
+            width:screen;
+            height: auto;
             background-color: $primary; 
             color: #fff;
-            margin-bottom: 10px;
+            padding-bottom: 1rem;
+            margin: 1rem;
 
             .testimonial-box{
-                height:240px;
-                width:152px;
-                margin-left:10px;
-                margin-top: 24px;
-                font-size: 10px;
+                width:screen;
+                height: auto;
+                /*margin-left:30px;
+                margin-top: 10px;*/
+                padding: 10px 10px 0px 30px;
+
     
                 .testimonial-textbox{
                     margin-top:8px;
@@ -39,9 +33,9 @@
                     }
     
                     .textbox-title{
-                        font-size: 14px;
                         padding-top:22px;
                         margin-left: 12px;
+                        font-size: 18px;
     
                         .title-main{
                             font-weight:400;

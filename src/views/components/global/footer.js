@@ -30,7 +30,7 @@ export default function Footer(){
                     <div class="form-box">
                         <textarea name="" id="" cols="30" rows="5" placeholder="Write a message!"></textarea>
                     </div>
-					<div>
+					<div class="form-button">
 						<button type="submit">Submit</button>
 					</div>
                 </div>

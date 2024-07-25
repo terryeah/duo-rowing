@@ -77,6 +77,10 @@ footer {
             resize: vertical; 
           }
         }
+
+        .form-button{
+          text-align: center;
+        }
       }
     }
 }
@@ -141,13 +145,13 @@ footer {
   
         .form-txt {
           position: absolute;
-          top: 20px;
+          top: 15px;
           font-size:10px;
         }
   
         .form-box {
           position: absolute;
-          top: 35px;
+          top: 30px;
           width: 100%; 
       
           textarea {
@@ -157,6 +161,11 @@ footer {
               font-size:10px;
           }
 
+        }
+
+        .form-button{
+          position: absolute;
+          top: 95px;
         }
       }
     }
@@ -192,12 +201,15 @@ footer {
       .form {
 
         .form-txt {
-          top: 30px;
+          top: 15px;
         }
   
         .form-box {
-          top: 50px;
+          top: 30px;
+        }
 
+        .form-button{
+          top: 95px;
         }
       }
     }
@@ -239,6 +251,14 @@ footer {
           top: 20px;
           font-size:14px;
         }
+  
+        .form-box {
+          top: 40px;
+        }
+
+        .form-button{
+          top: 115px;
+        }
       }
     }
   }
@@ -277,8 +297,13 @@ footer {
         }
   
         .form-box {
-          top: 100px;
+          top: 90px;
         }
+
+        .form-button{
+          top: 160px;
+        }
+        
       }
     }
   }

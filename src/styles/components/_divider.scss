@@ -2,6 +2,25 @@
 	width: 100%;
 
 	.divider {
+		@media only screen and (max-width: 639px) {
+		background-color: #000000;
+		height: 4px;
+		margin-top: 8rem;
+		margin-bottom: 8rem;
+		width: 65%;
+
+		&.left-aligned {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		&.right-aligned {
+			margin-left: auto;
+			margin-right: 0;
+		}
+		}
+
+
+
 		background-color: #000000;
 		height: 4px;
 		margin-top: 15rem;
