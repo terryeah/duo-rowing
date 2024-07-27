@@ -100,8 +100,3 @@ This project uses the trunk-based development method. All developers should work
    ```bash
 	git push origin main
    ```
-
-<br>
-
-## License
-This project is licensed under the MIT License.
