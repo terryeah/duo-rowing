@@ -23,7 +23,7 @@ export default function Footer(){
                         <li>Contact</li>
                     </ul>
                 </div>
-                <form class="form">
+                <form method="post" class="form">
                     <div class="form-txt">
                         Hava a question? Leave a message
                     </div>
@@ -31,9 +31,9 @@ export default function Footer(){
                         <textarea name="" id="" cols="30" rows="5" placeholder="Write a message!"></textarea>
                     </div>
 					<div class="form-button">
-						<button type="submit">Submit</button>
+						<button>Submit</button>
 					</div>
-                </div>
+                </form>
             </div>
         </div>
     `;
