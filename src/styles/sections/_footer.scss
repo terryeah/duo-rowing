@@ -15,23 +15,6 @@ footer {
         }
       }
   
-      .contact {
-        max-width: screen;
-        justify-content: center;
-        margin:auto;
-        width:90%;
-
-        .contact-text {
-          font-weight: 400;
-          text-align: center;
-          margin-bottom: 10px;
-        }
-  
-        .contact-info {
-          text-align: center;
-        }
-      }
-  
       .index {
         max-width: screen;
         justify-content: center;
@@ -49,36 +32,20 @@ footer {
         }
       }
 
-      .form {
+      .contact {
         max-width: screen;
         justify-content: center;
         margin:auto;
-        margin-top: 30px;
         width:90%;
-  
-        .form-txt {
-          text-align: center;
-          font-size:14px;
-        }
-  
-        .form-box {
-          max-width: screen;
-          justify-content: center;
-          margin:auto;
-          width:90%;
-      
-          textarea {
-            max-width: screen;
-            justify-content: center;
-            margin:auto;
-            margin-top: 10px;
-            width:100%;
-            height: auto;
-            resize: vertical; 
-          }
-        }
 
-        .form-button{
+        .contact-text {
+          font-weight: 400;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+  
+        .contact-info {
           text-align: center;
         }
       }
@@ -95,121 +62,74 @@ footer {
       margin: auto;
   
       .footer-logo {
-        width: 100%;
         
         img {
           width: 100%;
         }
       }
   
+      .index {
+        position: relative;
+        width: 80%;
+        margin-right: 70px;
+  
+        ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          position: absolute;
+          top: 50px;
+          left: 25px;
+          font-size:10px;
+        }
+        
+        li {
+          margin-right: 40px;
+        }
+        li:not(:last-child) {
+          padding-bottom: 10px;
+        }
+      }
+
       .contact {
         position: relative;
         width: 100%;
   
         .contact-text {
           position: absolute;
-          left:10px;
+          left:80px;
           top: 25px;
           font-size:10px;
         }
   
         .contact-info {
           position: absolute;
-          left: 10px;
-          top: 70px;
+          left: 80px;
+          top: 60px;
           font-size:10px;
         }
       }
   
-      .index {
-        position: relative;
-        width: 80%;
-  
-        ul {
-          list-style: none;
-          padding: 0;
-          position: absolute;
-          top: 12px;
-          left: 25px;
-          font-size:10px;
-        }
-  
-        li:not(:last-child) {
-          padding-bottom: 10px;
-        }
-      }
-  
-      .form {
-        width: 100%;
-        position: relative;
-  
-        .form-txt {
-          position: absolute;
-          top: 15px;
-          font-size:10px;
-        }
-  
-        .form-box {
-          position: absolute;
-          top: 30px;
-          width: 100%; 
-      
-          textarea {
-              width: 100%; 
-              height: auto;
-              resize: vertical; 
-              font-size:10px;
-          }
-
-        }
-
-        .form-button{
-          position: absolute;
-          top: 95px;
-        }
-      }
     }
 
   }
 
   @media (min-width: $md){
     .footer-box {
-      max-width: 720px;
-  
-      .contact {
-  
-        .contact-text {
-          left:20px;
-          top: 40px;
-        }
-  
-        .contact-info {
-          left: 20px;
-          top: 90px;
-        }
-      }
+      max-width: screen;
   
       .index {
-        width: 100%;
+        width: 80%;
   
         ul {
-          top: 30px;
+          top: 50px;
           left: 40px;
         }
       }
-  
-      .form {
-
-        .form-txt {
-          top: 15px;
-        }
-  
-        .form-box {
-          top: 30px;
-        }
-
-        .form-button{
-          top: 95px;
+ 
+      .contact {
+        .contact-text {
+          top: 25px;
         }
       }
     }
@@ -221,93 +141,60 @@ footer {
     .footer-box {
       max-width: 890px;
   
+      .index {
+        width: 50%;
+        ul {
+          top: 50px;
+          left: 80px;
+          font-size:14px;
+        }
+  
+      }
       .contact {
   
         .contact-text {
-          left:30px;
-          top: 50px;
+          left: 200px;
+          top: 30px;
           font-size:14px;
         }
   
         .contact-info {
-          left: 30px;
-          top: 100px;
+          left: 200px;
+          top: 65px;
           font-size:14px;
         }
       }
   
-      .index {
-  
-        ul {
-          left: 50px;
-          font-size:14px;
-        }
-  
-      }
-  
-      .form {
-  
-        .form-txt {
-          top: 20px;
-          font-size:14px;
-        }
-  
-        .form-box {
-          top: 40px;
-        }
-
-        .form-button{
-          top: 115px;
-        }
-      }
     }
   }
 
   @media (min-width: $xl){
     .footer-box {
-      max-width: 1180px;
-  
-      .contact {
+      max-width: screen;
+      margin:auto;
 
+  
+      .index {
+        ul {
+          top: 60px;
+          font-size:16px;
+        }
+
+      }
+
+      .contact {
         .contact-text {
-          left: 50px;
+          font-size:16px;
         }
   
         .contact-info {
-          left: 50px;
-          top: 151px;
+          left: 200px;
+          top: 70px;
+          font-size:16px;
         }
       }
   
-      .index {
-  
-        ul {
-          top: 60px;
-        }
-  
-        li:not(:last-child) {
-          padding-bottom: 15px;
-        }
-      }
-  
-      .form {
-  
-        .form-txt {
-          top: 50px;
-        }
-  
-        .form-box {
-          top: 90px;
-        }
-
-        .form-button{
-          top: 160px;
-        }
-        
-      }
     }
   }
-
- 
-    
+  
 }

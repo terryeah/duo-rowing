@@ -6,6 +6,15 @@ export default function Footer(){
                 <div class="footer-logo">
                     <img src="/images/logo-main.png" alt="Duo logo">
                 </div>
+                <div class="index">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Product</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                
                 <div class="contact">
                     <div class="contact-text">
                         Contact
@@ -15,25 +24,6 @@ export default function Footer(){
                         <p>Email: duo.rowing@gmail.com</p>
                     </div>
                 </div>
-                <div class="index">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Products</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <form method="post" class="form">
-                    <div class="form-txt">
-                        Hava a question? Leave a message
-                    </div>
-                    <div class="form-box">
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Write a message!"></textarea>
-                    </div>
-					<div class="form-button">
-						<button>Submit</button>
-					</div>
-                </form>
             </div>
         </div>
     `;
