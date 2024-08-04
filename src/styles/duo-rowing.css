@@ -1205,9 +1205,94 @@ div .hero-image {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 639px) {
+  img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  .customer-contentsbox {
+    width: screen;
+    height: 100px;
+    background-color: #252830;
+    color: #fff;
+    font-weight: 100;
+    font-size: 10px;
+    padding-bottom: 1rem;
+  }
+  .customer-contentsbox .testimonial-box {
+    width: screen;
+    height: auto;
+    padding: 20px 10px 0px 100px;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox {
+    margin-top: 10px;
+    border-left: solid #fff 1px;
+    position: relative;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox .textbox-line {
+    position: absolute;
+    top: 20px;
+    width: 2px;
+    height: 13px;
+    background-color: #fff;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox .textbox-title {
+    padding-top: 22px;
+    margin-left: 12px;
+    font-size: 10px;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox .textbox-title .title-main {
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox .textbox-text {
+    padding-top: 19px;
+    margin-left: 12px;
+  }
+}
 @media (min-width: 640px) {
-  .customer-conteiner img {
-    width: 300px;
+  img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+  .customer-contentsbox {
+    width: screen;
+    height: 100px;
+    background-color: #252830;
+    color: #fff;
+    font-weight: 100;
+    font-size: 10px;
+    padding-bottom: 1rem;
+  }
+  .customer-contentsbox .testimonial-box {
+    width: screen;
+    height: auto;
+    padding: 20px 10px 0px 100px;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox {
+    margin-top: 10px;
+    border-left: solid #fff 1px;
+    position: relative;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox .textbox-line {
+    position: absolute;
+    top: 20px;
+    width: 2px;
+    height: 13px;
+    background-color: #fff;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox .textbox-title {
+    padding-top: 22px;
+    margin-left: 12px;
+    font-size: 10px;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox .textbox-title .title-main {
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  .customer-contentsbox .testimonial-box .customer-textbox .textbox-text {
+    padding-top: 19px;
+    margin-left: 12px;
   }
 }
 /*# sourceMappingURL=duo-rowing.css.map */
