@@ -6,6 +6,7 @@ import createDivider from '../../components/global/divider';
 import ProductDetail from './product-detail';
 import Productbody from './product-body';
 import ProductCustomer from './product-customer';
+import Testimonial from '../home/testimonial.js';
 
 export default function Product() {
     const productPage = document.createElement('div');
@@ -25,6 +26,8 @@ export default function Product() {
         ${createDivider('left-aligned').outerHTML}
         ${Productbody().outerHTML}
         ${ProductCustomer().outerHTML}
+        ${Testimonial().outerHTML}
+        ${createDivider('right-aligned').outerHTML}
         ${Footer().outerHTML}
     `;
 }
