@@ -4,6 +4,7 @@ import hero from './hero';
 import Footer from '../../components/global/footer';
 import createDivider from '../../components/global/divider';
 import ProductDetail from './product-detail';
+import Productbody from './product-body';
 
 export default function Product() {
     const productPage = document.createElement('div');
@@ -21,6 +22,7 @@ export default function Product() {
         ${productPage.outerHTML}
         ${ProductDetail().outerHTML}
         ${createDivider('left-aligned').outerHTML}
+        ${Productbody().outerHTML}
         ${Footer().outerHTML}
     `;
 }

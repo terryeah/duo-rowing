@@ -1,0 +1,228 @@
+@media only screen and (max-width: 639px) {
+    .detail-container{
+        margin: 0 3.5rem;
+
+        .detail-box{
+            margin-bottom: 30px;
+
+            .title{
+                font-weight: 700;
+                font-size: 14px;
+            }
+            .text-box{
+                font-size: 10px;
+                font-weight: 200;
+                margin-top: 1rem;
+                width: 90%;
+
+                ul {
+                    padding-left:10px
+                }
+            }
+
+            p{
+                font-size: 10px;
+                font-weight: 200;
+                margin-top: 1rem;
+            }
+
+            .price-table{
+                width: 230px;
+                .price-row{
+                    justify-content: space-between;
+                    display: flex;
+
+                    &:not(:last-child){
+                        border-bottom:solid black 1px;
+                    }
+                }
+
+
+                .price-item{
+                    margin: 8px 0px;
+                    font-size: 10px;
+                    font-weight: 200;
+                }
+            }
+        }
+    }   
+}
+
+@media (min-width: $sm){
+    .detail-container{
+        display:flex;
+        margin: 0 4rem;
+        justify-content: space-between;
+
+        .detail-box{
+            margin-bottom: 30px;
+
+            .title{
+                font-weight: 700;
+                font-size: 14px;
+            }
+            .text-box{
+                font-size: 10px;
+                font-weight: 200;
+                margin-top: 1rem;
+                width: 200px;
+
+                ul {
+                    padding-left:10px
+                }
+            }
+
+            p{
+                font-size: 10px;
+                font-weight: 200;
+                margin-top: 1rem;
+            }
+
+            .price-table{
+                width: 230px;
+                .price-row{
+                    justify-content: space-between;
+                    display: flex;
+
+                    &:not(:last-child){
+                        border-bottom:solid black 1px;
+                    }
+                }
+
+
+                .price-item{
+                    margin: 8px 0px;
+                    font-size: 10px;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $md){
+    .detail-container{
+
+        .detail-box{
+            margin-bottom: 60px;
+
+            .title{
+                font-size: 14px;       
+            }
+            .text-box{
+                font-size: 12px;
+                width: 220px;
+
+                ul {
+                    padding-left:12px
+                }
+            }
+
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: $lg){
+    .detail-container{
+        margin: 0 6rem;
+        .detail-box{
+            margin-bottom: 50px;
+
+            .title{
+                font-size: 16px;
+            }
+            .text-box{
+                font-size: 14px;
+                width: 300px;
+
+                ul {
+                    padding-left:10px
+                }
+            }
+
+            p{
+                font-size: 14px;
+            }
+
+            .price-table{
+                width: 230px;
+
+                .price-item{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $xl){
+    .detail-container{
+        margin: 0 8rem;
+
+        .detail-box{
+            margin-bottom: 70px;
+
+            .title{
+                font-size: 18px;
+            }
+            .text-box{
+                font-size: 16px;
+                width: 400px;
+
+                ul {
+                    padding-left:10px
+                }
+            }
+
+            p{
+                font-size: 16px;
+            }
+
+            .price-table{
+                width: 280px;
+
+                .price-item{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $xxl){
+    .detail-container{
+        margin: 0 10rem;
+
+        .detail-box{
+            margin-bottom: 100px;
+
+            .title{
+                font-size: 22px;
+            }
+            .text-box{
+                font-size: 20px;
+                width: 500px;
+
+                ul {
+                    padding-left:10px
+                }
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+            .price-table{
+                width: 350px;
+
+                .price-item{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

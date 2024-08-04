@@ -75,6 +75,30 @@ nav ul li a {
 div .hero-image {
   width: 100%;
 }
+@media only screen and (max-width: 639px) {
+  div h1 {
+    font-size: 4rem;
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 640px) {
+  div h1 {
+    font-size: 6rem;
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  div h1 {
+    font-size: 7rem;
+    margin-left: 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  div h1 {
+    font-size: 11rem;
+    margin-left: 4rem;
+  }
+}
 
 @media only screen and (max-width: 639px) {
   .home-products {
@@ -907,7 +931,95 @@ div .hero-image {
   margin-right: 0;
 }
 
-.hero-textbox {
-  font-size: 20px;
+@media only screen and (max-width: 639px) {
+  .hero-title {
+    margin-left: 2.8rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+  .hero-textbox {
+    max-width: 50%;
+    margin: 0 2.8rem;
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .hero-textbox p {
+    margin-bottom: 1rem;
+  }
+  .components-box {
+    width: screen;
+    margin: 0 2.8rem;
+    margin-top: 80px;
+    height: 180px;
+    background-color: #d3d3d3;
+  }
+}
+@media (min-width: 640px) {
+  .hero-title {
+    margin-left: 2.8rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+  .hero-textbox {
+    max-width: 50%;
+    margin: 0 2.8rem;
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .hero-textbox p {
+    margin-bottom: 1rem;
+  }
+  .components-box {
+    width: screen;
+    margin: 0 2.8rem;
+    margin-top: 80px;
+    height: 180px;
+    background-color: #d3d3d3;
+  }
+}
+@media (min-width: 768px) {
+  .hero-textbox {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-title {
+    margin-left: 5.3rem;
+    font-size: 25px;
+  }
+  .hero-textbox {
+    margin: 0 5.3rem;
+    margin-top: 1rem;
+    font-size: 16px;
+  }
+  .hero-textbox p {
+    margin-bottom: 1rem;
+  }
+  .components-box {
+    margin: 0 5rem;
+    margin-top: 80px;
+    height: 180px;
+    background-color: #d3d3d3;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-title {
+    margin-left: 5.3rem;
+    font-size: 35px;
+  }
+  .hero-textbox {
+    max-width: 50%;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-textbox {
+    max-width: 50%;
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=duo-rowing.css.map */
