@@ -1,0 +1,84 @@
+@media only screen and (max-width: 639px) {
+    .contact-container{
+        .contact-contentsbox{
+
+            .contact-text{
+                max-width: screen;
+                margin: 1rem 2.5rem;
+                
+                p{
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $sm){
+    .contact-container{
+        .contact-contentsbox{
+
+            .contact-text{
+                width: 50%;
+                margin: 1rem 2.5rem;
+
+                p{
+                    font-size: 14px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: $lg){
+    .contact-container{
+        .contact-contentsbox{
+
+            .contact-text{
+                padding: 2rem;
+
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: $xl){
+    .contact-container{
+
+        .contact-contentsbox{
+
+            .contact-text{
+                padding: 2rem;
+
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: $xxl){
+    .contact-container{
+
+        .contact-contentsbox{
+
+            .contact-text{
+                padding: 1.5rem;
+
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}

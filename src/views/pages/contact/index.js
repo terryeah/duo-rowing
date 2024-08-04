@@ -3,6 +3,8 @@ import Nav from '../../components/global/nav';
 import hero from './hero';
 import Footer from '../../components/global/footer';
 
+import ContactBody from './contact.body';
+
 export default function Contact() {
     const contactPage = document.createElement('div');
 
@@ -11,15 +13,13 @@ export default function Contact() {
             ${hero().outerHTML}
         </section>
         <!-- Other home page content -->
-        <div>
-            <p>Contact message test</p>
-        </div>
     `;
 
     return `
         ${Header().outerHTML}
         ${Nav().outerHTML}
         ${contactPage.outerHTML}
+        ${ContactBody().outerHTML}
         ${Footer().outerHTML}
     `;
 }

@@ -21,7 +21,7 @@ export default function About() {
         ${Nav().outerHTML}
         ${aboutPage.outerHTML}
         ${AboutBody().outerHTML}
-       ${createDivider('right-aligned').outerHTML}
+        ${createDivider('right-aligned').outerHTML}
         ${Footer().outerHTML}
     `;
 }
