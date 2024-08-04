@@ -1013,13 +1013,201 @@ div .hero-image {
   }
   .hero-textbox {
     max-width: 50%;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1280px) {
   .hero-textbox {
     max-width: 50%;
     font-size: 24px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .detail-container {
+    margin: 0 3.5rem;
+  }
+  .detail-container .detail-box {
+    margin-bottom: 30px;
+  }
+  .detail-container .detail-box .title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .detail-container .detail-box .text-box {
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 1rem;
+    width: 90%;
+  }
+  .detail-container .detail-box .text-box ul {
+    padding-left: 10px;
+  }
+  .detail-container .detail-box p {
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 1rem;
+  }
+  .detail-container .detail-box .price-table {
+    width: 230px;
+  }
+  .detail-container .detail-box .price-table .price-row {
+    justify-content: space-between;
+    display: flex;
+  }
+  .detail-container .detail-box .price-table .price-row:not(:last-child) {
+    border-bottom: solid black 1px;
+  }
+  .detail-container .detail-box .price-table .price-item {
+    margin: 8px 0px;
+    font-size: 10px;
+    font-weight: 200;
+  }
+}
+@media (min-width: 640px) {
+  .detail-container {
+    display: flex;
+    margin: 0 4rem;
+    justify-content: space-between;
+  }
+  .detail-container .detail-box {
+    margin-bottom: 30px;
+  }
+  .detail-container .detail-box .title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .detail-container .detail-box .text-box {
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 1rem;
+    width: 200px;
+  }
+  .detail-container .detail-box .text-box ul {
+    padding-left: 10px;
+  }
+  .detail-container .detail-box p {
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 1rem;
+  }
+  .detail-container .detail-box .price-table {
+    width: 230px;
+  }
+  .detail-container .detail-box .price-table .price-row {
+    justify-content: space-between;
+    display: flex;
+  }
+  .detail-container .detail-box .price-table .price-row:not(:last-child) {
+    border-bottom: solid black 1px;
+  }
+  .detail-container .detail-box .price-table .price-item {
+    margin: 8px 0px;
+    font-size: 10px;
+    font-weight: 200;
+  }
+}
+@media (min-width: 768px) {
+  .detail-container .detail-box {
+    margin-bottom: 60px;
+  }
+  .detail-container .detail-box .title {
+    font-size: 14px;
+  }
+  .detail-container .detail-box .text-box {
+    font-size: 12px;
+    width: 220px;
+  }
+  .detail-container .detail-box .text-box ul {
+    padding-left: 12px;
+  }
+  .detail-container .detail-box p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .detail-container {
+    margin: 0 6rem;
+  }
+  .detail-container .detail-box {
+    margin-bottom: 50px;
+  }
+  .detail-container .detail-box .title {
+    font-size: 16px;
+  }
+  .detail-container .detail-box .text-box {
+    font-size: 14px;
+    width: 300px;
+  }
+  .detail-container .detail-box .text-box ul {
+    padding-left: 10px;
+  }
+  .detail-container .detail-box p {
+    font-size: 14px;
+  }
+  .detail-container .detail-box .price-table {
+    width: 230px;
+  }
+  .detail-container .detail-box .price-table .price-item {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1280px) {
+  .detail-container {
+    margin: 0 8rem;
+  }
+  .detail-container .detail-box {
+    margin-bottom: 70px;
+  }
+  .detail-container .detail-box .title {
+    font-size: 18px;
+  }
+  .detail-container .detail-box .text-box {
+    font-size: 16px;
+    width: 400px;
+  }
+  .detail-container .detail-box .text-box ul {
+    padding-left: 10px;
+  }
+  .detail-container .detail-box p {
+    font-size: 16px;
+  }
+  .detail-container .detail-box .price-table {
+    width: 280px;
+  }
+  .detail-container .detail-box .price-table .price-item {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1536px) {
+  .detail-container {
+    margin: 0 10rem;
+  }
+  .detail-container .detail-box {
+    margin-bottom: 100px;
+  }
+  .detail-container .detail-box .title {
+    font-size: 22px;
+  }
+  .detail-container .detail-box .text-box {
+    font-size: 20px;
+    width: 500px;
+  }
+  .detail-container .detail-box .text-box ul {
+    padding-left: 10px;
+  }
+  .detail-container .detail-box p {
+    font-size: 20px;
+  }
+  .detail-container .detail-box .price-table {
+    width: 350px;
+  }
+  .detail-container .detail-box .price-table .price-item {
+    font-size: 20px;
+  }
+}
+@media (min-width: 640px) {
+  .customer-conteiner img {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=duo-rowing.css.map */
