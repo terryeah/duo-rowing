@@ -1,0 +1,103 @@
+@media only screen and (max-width: 639px) {
+    .hero-title{
+        margin-left: 2.8rem;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+    .hero-textbox{
+        max-width: 50%;
+        margin: 0 2.8rem;
+        margin-top: 1rem;
+        font-weight: 200;
+        font-size: 14px;
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+    .components-box{
+        width: screen;
+        margin: 0 2.8rem;
+        margin-top: 80px;
+        height: 180px;
+        background-color: #d3d3d3;
+    }  
+}
+
+@media (min-width: $sm){
+    .hero-title{
+        margin-left: 2.8rem;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+    .hero-textbox{
+        max-width: 50%;
+        margin: 0 2.8rem;
+        margin-top: 1rem;
+        font-weight: 200;
+        font-size: 14px;
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+    .components-box{
+        width: screen;
+        margin: 0 2.8rem;
+        margin-top: 80px;
+        height: 180px;
+        background-color: #d3d3d3;
+    }
+}
+
+@media (min-width: $md){
+
+    .hero-textbox{
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: $lg){
+    .hero-title{
+        margin-left: 5.3rem;
+        font-size: 25px;
+    }
+    .hero-textbox{
+        margin: 0 5.3rem;
+        margin-top: 1rem;
+        font-size: 16px;
+
+        p{
+            margin-bottom: 1rem;
+        }
+    }
+    .components-box{
+        margin: 0 5rem;
+        margin-top: 80px;
+        height: 180px;
+        background-color: #d3d3d3;
+    }
+
+}
+
+@media (min-width: $xl){
+    .hero-title{
+        margin-left: 5.3rem;
+        font-size: 35px;
+    }
+
+    .hero-textbox{
+        max-width: 50%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: $xl){
+    .hero-textbox{
+        max-width: 50%;
+        font-size: 24px;
+    }
+}
