@@ -1,0 +1,73 @@
+@media only screen and (max-width: 639px) {
+    .contact-bottom {
+        margin-top: 2rem;
+
+        .image-container {
+            width: screen; 
+            height: 200px; 
+            overflow: hidden; 
+            position: relative;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+}
+@media (min-width: $sm){
+
+.contact-bottom {
+    margin-top: 2rem;
+
+    .image-container {
+        width: screen; 
+        height: 200px; 
+        overflow: hidden; 
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+}
+
+@media (min-width: $lg){
+
+    .contact-bottom {
+        .image-container {
+            height: 300px; 
+        }
+    }
+}
+
+@media (min-width: $xl){
+
+    .contact-bottom {
+        .image-container {
+            height: 400px; 
+        }
+    }
+}
+
+@media (min-width: $xxl){
+
+    .contact-bottom {
+        .image-container {
+            height: 500px; 
+        }
+    }
+}

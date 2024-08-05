@@ -1,10 +1,12 @@
 import Header from '../../components/global/header';
 import Nav from '../../components/global/nav';
 import hero from './hero';
+import createDivider from '../../components/global/divider';
 import Footer from '../../components/global/footer';
 
 import ContactBody from './contact.body';
 import ContactForm from './contact-form';
+import Contactbottom from './contact-bottom';
 
 export default function Contact() {
     const contactPage = document.createElement('div');
@@ -22,6 +24,8 @@ export default function Contact() {
         ${contactPage.outerHTML}
         ${ContactBody().outerHTML}
         ${ContactForm().outerHTML}
+        ${Contactbottom().outerHTML}
+        ${createDivider('right-aligned').outerHTML}
         ${Footer().outerHTML}
     `;
 }

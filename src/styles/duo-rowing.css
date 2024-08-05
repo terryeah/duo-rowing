@@ -1397,4 +1397,252 @@ div .hero-image {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 639px) {
+  .contact-form {
+    margin-top: 2rem;
+  }
+  .contact-form .form-container {
+    border-left: solid 1px #333;
+    margin: 0 1rem;
+    position: relative;
+  }
+  .contact-form .form-container .form-line {
+    width: 1px;
+    height: 60px;
+    background-color: #333;
+    position: absolute;
+    top: 1rem;
+  }
+  .contact-form .form-container .contact-form {
+    max-width: screen;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .contact-form .form-container .contact-form h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .contact-form .form-container .contact-form form {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .contact-form .form-container .contact-form form .input-row p {
+    margin: 10px 0;
+  }
+  .contact-form .form-container .contact-form form .input-row input {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form .input-row input:focus {
+    outline: none;
+    border-bottom: 1px solid #333;
+  }
+  .contact-form .form-container .contact-form form .input-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form .input-row textarea:focus {
+    outline: none;
+  }
+  .contact-form .form-container .contact-form form .message-text {
+    margin: 20px 0 10px 0;
+  }
+  .contact-form .form-container .contact-form form button {
+    padding: 5px 20px;
+    background-color: #fff;
+    color: #333;
+    border: solid 1px #ccc;
+    font-size: 14px;
+    font-weight: 100;
+    transition: background-color 0.3s ease;
+  }
+  .contact-form .form-container .contact-form form button:hover {
+    background-color: #252830;
+    color: #fff;
+  }
+}
+@media (min-width: 640px) {
+  .contact-form {
+    margin: 1.5rem;
+  }
+  .contact-form .form-container {
+    border-left: solid 1px #333;
+    margin: 0 1rem;
+    position: relative;
+  }
+  .contact-form .form-container .form-line {
+    width: 1px;
+    height: 60px;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+  }
+  .contact-form .form-container .contact-form {
+    max-width: screen;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .contact-form .form-container .contact-form h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .contact-form .form-container .contact-form form {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .contact-form .form-container .contact-form form .input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .contact-form .form-container .contact-form form .input-row p {
+    width: 25%;
+    margin: 0;
+  }
+  .contact-form .form-container .contact-form form .input-row input {
+    width: 25%;
+    height: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form .input-row input:focus {
+    outline: none;
+    border-bottom: 1px solid #333;
+  }
+  .contact-form .form-container .contact-form form .input-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form .input-row textarea:focus {
+    outline: none;
+  }
+  .contact-form .form-container .contact-form form .message-text {
+    margin: 20px 0 10px 0;
+  }
+  .contact-form .form-container .contact-form form button {
+    width: 20%;
+    padding: 5px 20px;
+    background-color: #fff;
+    color: #333;
+    border: solid 1px #ccc;
+    font-size: 14px;
+    font-weight: 100;
+    transition: background-color 0.3s ease;
+  }
+  .contact-form .form-container .contact-form form button:hover {
+    background-color: #252830;
+    color: #fff;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-form {
+    margin: 3rem;
+  }
+  .contact-form .form-container .form-line {
+    height: 70px;
+  }
+  .contact-form .form-container .contact-form h2 {
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form {
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form .input-row {
+    gap: 1rem;
+  }
+  .contact-form .form-container .contact-form form .input-row p {
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form .input-row input {
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form .input-row textarea {
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form .message-text {
+    font-size: 16px;
+  }
+  .contact-form .form-container .contact-form form button {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .contact-form .form-container .form-line {
+    height: 70px;
+  }
+  .contact-form .form-container .contact-form h2 {
+    font-size: 18px;
+  }
+  .contact-form .form-container .contact-form form {
+    font-size: 18px;
+  }
+  .contact-form .form-container .contact-form form .input-row {
+    gap: 1rem;
+  }
+  .contact-form .form-container .contact-form form .input-row p {
+    font-size: 18px;
+  }
+  .contact-form .form-container .contact-form form .input-row input {
+    font-size: 18px;
+  }
+  .contact-form .form-container .contact-form form .input-row textarea {
+    font-size: 18px;
+  }
+  .contact-form .form-container .contact-form form .message-text {
+    font-size: 18px;
+  }
+  .contact-form .form-container .contact-form form button {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1536px) {
+  .contact-form .form-container .form-line {
+    height: 70px;
+  }
+  .contact-form .form-container .contact-form h2 {
+    font-size: 20px;
+  }
+  .contact-form .form-container .contact-form form {
+    font-size: 20px;
+  }
+  .contact-form .form-container .contact-form form .input-row {
+    gap: 1rem;
+  }
+  .contact-form .form-container .contact-form form .input-row p {
+    font-size: 20px;
+  }
+  .contact-form .form-container .contact-form form .input-row input {
+    font-size: 20px;
+  }
+  .contact-form .form-container .contact-form form .input-row textarea {
+    font-size: 20px;
+  }
+  .contact-form .form-container .contact-form form .message-text {
+    font-size: 20px;
+  }
+  .contact-form .form-container .contact-form form button {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=duo-rowing.css.map */
