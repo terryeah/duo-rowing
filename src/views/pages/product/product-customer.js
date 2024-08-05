@@ -6,7 +6,7 @@ export default function ProductCustomer() {
             <img src="/images/product_01.webp" alt="Product Customer">
             <div class="customer-contentsbox">
                 <div class="testimonial-box">
-                    <p>Our Customer</p>
+                    <p>Our Customers</p>
                     <div class="customer-textbox">
                         <div class="textbox-line"></div>
                         <div class="textbox-title">
