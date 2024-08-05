@@ -11,7 +11,6 @@ Duo Rowing is a single-page application (SPA) built using vanilla JavaScript, SC
 - [Usage](#usage)
 - [Project Workflow](#project-workflow)
 - [Git Workflow](#git-workflow)
-- [License](#license)
 
 <br>
 
@@ -52,7 +51,13 @@ Component locations vary depending on their intended usage. If a component is to
 An imported component can be utilised in this format: `${component-name.output}`. You can also pass a class name, similar to how `createDivider` passes a class name of `left-aligned`.
 
 ### Controllers
-Controllers are responsible for handling the routing and logic of the application. They manage how different views are loaded and how the application state changes in response to user interactions. For example, the `pageRouter` function in `src/controllers/page-router.js` handles the navigation between different views based on the URL path.
+The routing in this application is handled by a single file, `src/controllers/router.js`. This file is responsible for managing navigation between different views based on the URL path. It contains two main functions:
+
+1. `router()`: This function determines which view to display based on the current URL path. It updates the document title and content accordingly, and initialises the navigation menu.
+
+2. `navigateTo(url)`: This function is used for client-side navigation. It updates the browser's history and calls the `router()` function to update the view.
+
+The router interacts with view files to dynamically load content and update the UI as needed. For example, when a user navigates to a new page, the router loads the appropriate view and updates the document title.
 
 ### Scripts
 Scripts are used for specific functionalities such as handling UI interactions and DOM manipulations. They work alongside controllers to implement the desired behaviors and features. For example, `src/scripts/components/nav.js` contains the logic to initialise the navigation menu and handle the mobile menu interactions.
