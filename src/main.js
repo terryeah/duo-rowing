@@ -1,16 +1,10 @@
 import './styles/duo-rowing.scss';
-import { navigateTo } from './controllers/router';
-import { pageRouter } from './controllers/page-router';
-import { initialiseNav } from './scripts/components/nav';
+import { router, navigateTo } from './controllers/router';
 
 document.addEventListener('DOMContentLoaded', () => {
-    pageRouter();
+    router();
     window.navigateTo = navigateTo;
-
     import('./scripts/duo-rowing.js');
 });
 
-window.addEventListener('popstate', () => {
-    pageRouter();
-    initialiseNav();
-});
+window.addEventListener('popstate', router);
