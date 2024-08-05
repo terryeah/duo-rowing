@@ -4,6 +4,7 @@ import hero from './hero';
 import Footer from '../../components/global/footer';
 
 import ContactBody from './contact.body';
+import ContactForm from './contact-form';
 
 export default function Contact() {
     const contactPage = document.createElement('div');
@@ -20,6 +21,7 @@ export default function Contact() {
         ${Nav().outerHTML}
         ${contactPage.outerHTML}
         ${ContactBody().outerHTML}
+        ${ContactForm().outerHTML}
         ${Footer().outerHTML}
     `;
 }
