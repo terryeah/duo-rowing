@@ -10,6 +10,7 @@ export default function ContactForm() {
         <form action="https://formsubmit.co/c7a3ed9400bc4121857cd5bcda2d6416" method="POST">
           <input type="hidden" name="_subject" value="Duo Rowing - Form Submission">
           <input type="hidden" name="_cc" value="n0217ayumi@gmail.com">
+          <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" style="display:none">
           <div class="input-row">
             <p>FULL NAME:</p>
