@@ -13,7 +13,7 @@ export default function ContactForm() {
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" style="display:none">
           <div class="input-row">
-            <div class="input-contents">
+            <div class="input-contents space">
               <p>FULL NAME:</p>
               <input type="text" name="full-name" required>
             </div>
@@ -23,7 +23,7 @@ export default function ContactForm() {
             </div>
           </div>
           <div class="input-row">
-            <div class="input-contents">
+            <div class="input-contents space">
               <p>PHONE NUMBER:</p>
               <input type="tel" name="phone-number" required>
             </div>
