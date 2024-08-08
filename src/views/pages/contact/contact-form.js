@@ -13,16 +13,24 @@ export default function ContactForm() {
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" style="display:none">
           <div class="input-row">
-            <p>FULL NAME:</p>
-            <input type="text" name="full-name" required>
-            <p>EMAIL:</p>
-            <input type="email" name="email" required>
+            <div class="input-contents">
+              <p>FULL NAME:</p>
+              <input type="text" name="full-name" required>
+            </div>
+            <div class="input-contents">
+              <p>EMAIL:</p>
+              <input type="email" name="email" required>
+            </div>
           </div>
           <div class="input-row">
-            <p>PHONE NUMBER:</p>
-            <input type="tel" name="phone-number" required>
-            <p>SCHOOL/CLUB:</p>
-            <input type="text" name="school-club" required>
+            <div class="input-contents">
+              <p>PHONE NUMBER:</p>
+              <input type="tel" name="phone-number" required>
+            </div>
+            <div class="input-contents">
+              <p>SCHOOL/CLUB:</p>
+              <input type="text" name="school-club" required>
+            </div>
           </div>
           <p class="message-text">LEAVE A MESSAGE</p>
           <div class="input-row">
@@ -32,6 +40,6 @@ export default function ContactForm() {
         </form>
       </div>
     </div>    
-  `
+  `;
   return section;
 }
