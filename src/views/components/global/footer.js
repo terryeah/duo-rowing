@@ -20,8 +20,8 @@ export default function Footer(){
                         Contact
                     </div>
                     <div class="contact-info">
-                        <p>PH: 0437 849 062</p>
-                        <p>Email: duo.rowing@gmail.com</p>
+                        <p>PH: <a href="tel:0437849062">0437 849 062</a></p>
+                        <p>Email: <a href="mailto:duo.rowing@gmail.com">duo.rowing@gmail.com</a></p>
                     </div>
                 </div>
             </div>
