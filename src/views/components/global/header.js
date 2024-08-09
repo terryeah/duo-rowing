@@ -1,5 +1,6 @@
 export default function Header() {
     const header = document.createElement('header');
+    header.className = 'header'; // Add class for styling
     header.innerHTML = `
         <div class="row">
             <div class="col">

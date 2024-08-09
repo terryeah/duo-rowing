@@ -10,16 +10,16 @@ import Footer from '../../components/global/footer';
 export default function Home() {
     const heroSection = document.createElement('section');
 
-    heroSection.classList.add('hero');
+    heroSection.classList.add('home');
     heroSection.innerHTML = `
+        ${Header().outerHTML}
+        ${Nav().outerHTML}
         ${hero().outerHTML}
         ${createDivider('left-aligned').outerHTML}
 
     `;
 
     return `
-        ${Header().outerHTML}
-        ${Nav().outerHTML}
         ${heroSection.outerHTML}
         ${HomeProducts().outerHTML}
         ${Mission().outerHTML}

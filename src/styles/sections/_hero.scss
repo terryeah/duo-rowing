@@ -1,18 +1,25 @@
 div {
+    .home-hero {
+        position: relative;
+    }
+
     .hero-image {
         width: 100%;
     }
+    
 
     @media only screen and (max-width: 639px) {
         h1{
             font-size: 4rem;
             margin-left: 2rem;
+        
         }
     }
     @media (min-width: $sm){
         h1{
             font-size: 6rem;
             margin-left: 2rem;
+            margin-top: 10rem;
         }
     }
 

@@ -1,5 +1,6 @@
 export default function Nav() {
     const nav = document.createElement('nav');
+    nav.className = 'nav';
     nav.classList.add('d-none');
     nav.innerHTML = `
         <ul>
