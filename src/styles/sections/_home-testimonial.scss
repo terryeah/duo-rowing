@@ -14,7 +14,7 @@
             .testimonial-box{
                 width:screen;
                 height: auto;
-                padding: 10px 10px 0px 30px;
+                padding: 2rem 1rem 2rem 1.5rem;
 
     
                 .testimonial-textbox{
@@ -60,7 +60,7 @@
         }
     
         .testimonial-contentsbox {
-            height:300px;
+            height:320px;
             width:190px;
             background-color: $primary; 
             color: #fff;
@@ -72,8 +72,7 @@
             .testimonial-box{
                 height:240px;
                 width:152px;
-                margin-left:10px;
-                margin-top: 24px;
+                margin: 2rem 0 1rem 1rem;
                 font-size: 10px;
     
                 .testimonial-textbox{
@@ -114,7 +113,7 @@
         margin-top: 233px;
         
         .testimonial-contentsbox {
-            height:340px;
+            height:370px;
             width:220px;
     
             &:not(:last-child) { 
@@ -125,6 +124,7 @@
                 height:256px;
                 width:176px;
                 font-size: 12px;
+                margin: 2.5rem 0 1rem 1rem;
     
                 .testimonial-textbox{
 
