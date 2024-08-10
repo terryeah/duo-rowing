@@ -4,7 +4,9 @@ export default function Header() {
     header.innerHTML = `
         <div class="row">
             <div class="col">
+                <a href="/">
                 <img class="main-logo" src="/images/logo.svg" alt="Logo" width="61" height="51" />
+                </a>
             </div>
             <div class="col">
                 <img class="mobile-menu" src="/images/mobile-menu.svg" alt="Mobile Menu" width="50" height="20" />
