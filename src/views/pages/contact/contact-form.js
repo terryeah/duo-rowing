@@ -12,31 +12,46 @@ export default function ContactForm() {
           <input type="hidden" name="_cc" value="n0217ayumi@gmail.com">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" style="display:none">
+
           <div class="input-row">
             <div class="input-contents space">
+              <span class="asterisk">*</span>
               <p>FULL NAME:</p>
-              <input type="text" name="full-name" required>
+              <input type="text" name="full-name">
             </div>
             <div class="input-contents">
+              <span class="asterisk">*</span>
               <p>EMAIL:</p>
-              <input type="email" name="email" required>
+              <input type="email" name="email">
             </div>
           </div>
+
           <div class="input-row">
             <div class="input-contents space">
+              <span class="asterisk">*</span>
               <p>PHONE NUMBER:</p>
-              <input type="tel" name="phone-number" required>
+              <input type="tel" name="phone-number">
             </div>
             <div class="input-contents">
+              <span class="asterisk">*</span>
               <p>SCHOOL/CLUB:</p>
-              <input type="text" name="school-club" required>
+              <input type="text" name="school-club">
             </div>
           </div>
-          <p class="message-text">LEAVE A MESSAGE</p>
-          <div class="input-row">
-            <textarea name="message" rows="5" required></textarea>
+
+          <div class="d-flex">
+            <span class="asterisk">*</span>
+            <p class="message-text">LEAVE A MESSAGE</p>
           </div>
+          <div class="input-row">
+            <textarea name="message" rows="5"></textarea>
+          </div>
+
           <button type="submit">Submit</button>
+          <div class="d-flex form-validation-message">
+            <span class="asterisk">*</span>
+            <p>Required Field</p>
+          </div>
         </form>
       </div>
     </div>    

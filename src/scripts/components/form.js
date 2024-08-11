@@ -1,30 +1,64 @@
 export function initialiseForm() {
-  const contactForm = document.querySelector('form')
-  const inputField = contactForm.querySelector('textarea')
-  const submitButton = contactForm.querySelector('button')
+  const contactForm = document.querySelector('form');
+  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const asterisks = document.querySelectorAll('.asterisk');
+  const validationMessage = document.querySelector('.form-validation-message');
+  const fields = contactForm.querySelectorAll('input:not([type="hidden"]):not([name="_honey"]), textarea');
 
-  async function handleForm() {
-    if (inputField.value.length === 0) {
-      alert('Please type something in the text field.')
+  function validateField(field) {
+    const isValid = field.value.trim() !== '';
+    return isValid;
+  }
+
+  function showValidationFeedback(show) {
+    asterisks.forEach(asterisk => {
+      asterisk.style.display = show ? 'block' : 'none';
+    });
+    validationMessage.style.display = show ? 'flex' : 'none';
+  }
+
+  function validateForm() {
+    let isValid = true;
+    fields.forEach(field => {
+      if (!validateField(field)) {
+        isValid = false;
+      }
+    });
+    return isValid;
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if (validateForm()) {
+      showValidationFeedback(false);
+      contactForm.submit();
     } else {
-      await submitForm(inputField.value)
+      showValidationFeedback(true);
     }
   }
 
-  function submitForm(value) {
-    contactForm.submit()
+  function handleInput() {
+    if (validateForm()) {
+      showValidationFeedback(false);
+    }
   }
 
-  if (contactForm && submitButton) {
-    submitButton.addEventListener('click', (event) => {
-      event.preventDefault()
-      handleForm()
-    });
+  if (submitButton) {
+    submitButton.addEventListener('click', handleSubmit);
+  } else {
+    console.log('Submit button not found');
   }
+
+  fields.forEach(field => {
+    field.addEventListener('input', handleInput);
+  });
+
+  showValidationFeedback(false);
 }
 
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initialiseForm)
+  document.addEventListener('DOMContentLoaded', initialiseForm);
 } else {
-  initialiseForm()
+  initialiseForm();
 }
