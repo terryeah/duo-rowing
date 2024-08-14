@@ -13,6 +13,9 @@ export default function ContactForm() {
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="_honey" style="display:none">
 
+          <!-- Redirect to the contact page after form submission -->
+          <input type="hidden" name="_next" value="http://localhost:5173/contact">
+
           <div class="input-row">
             <div class="input-contents space">
               <span class="asterisk">*</span>
@@ -51,6 +54,9 @@ export default function ContactForm() {
           <div class="d-flex form-validation-message">
             <span class="asterisk">*</span>
             <p>Required Field</p>
+          </div>
+          <div class="d-flex form-validation-message">
+            <p class="sent-message">MESSAGE SENT SUCCESSFULLY!</p>
           </div>
         </form>
       </div>

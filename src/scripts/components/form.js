@@ -9,6 +9,8 @@ export function initialiseForm() {
   const validationMessage = document.querySelector('.form-validation-message');
   const fields = contactForm.querySelectorAll('input:not([type="hidden"]):not([name="_honey"]), textarea');
 
+  const sentMessage = document.querySelector('.sent-message');
+
   /**
    * Validates a single form field.
    * @param {HTMLInputElement|HTMLTextAreaElement} field - The field to validate.
@@ -28,6 +30,10 @@ export function initialiseForm() {
       asterisk.style.display = show ? 'block' : 'none';
     });
     validationMessage.style.display = show ? 'flex' : 'none';
+  }
+
+  function showSentMessage(show) {
+    sentMessage.style.display = show ? 'block' : 'none';
   }
 
   /**
@@ -55,6 +61,7 @@ export function initialiseForm() {
     if (validateForm()) {
       showValidationFeedback(false);
       contactForm.submit();
+      showSentMessage(true);
     } else {
       showValidationFeedback(true);
     }
