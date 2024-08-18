@@ -1,7 +1,7 @@
 footer {
   @media only screen and (max-width: 639px) {
     font-weight:200;
-    margin-bottom:90px;
+    margin-bottom:5.6rem;
 
     .footer-box{
       .footer-logo {
@@ -28,7 +28,7 @@ footer {
         }
   
         li:not(:last-child) {
-          padding-bottom: 10px;
+          padding-bottom: 0.625rem;
         }
       }
 
@@ -42,7 +42,7 @@ footer {
           text-align: center;
 
           p{
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
           }
         }
 
@@ -65,7 +65,7 @@ footer {
       justify-content: space-between;
       align-items: center;
       max-width: screen;
-      padding: 20px;
+      padding: 1.25rem;
       
       .footer-box {
         display: flex;
@@ -75,14 +75,14 @@ footer {
         
         .footer-logo {
           img {
-            max-height: 50px;
+            max-height: 3.1rem;
           }
         }
         
         .index {
           ul {
             display: flex;
-            gap: 20px;
+            gap: 1.25rem;
             padding-left: 0; 
             list-style-position: inside;
             font-weight: 100;
@@ -137,7 +137,7 @@ footer {
       justify-content: space-between;
       align-items: center;
       max-width: screen;
-      padding: 20px;
+      padding: 1.25rem;
       
       .footer-box {
         display: flex;
@@ -147,14 +147,14 @@ footer {
         
         .footer-logo {
           img {
-            max-height: 100px;
+            max-height: 6.25rem;
           }
         }
         
         .index {
           ul {
             display: flex;
-            gap: 20px;
+            gap: 1.25rem;
             padding-left: 0; 
             list-style-position: inside;
             font-size: 16px;
@@ -198,7 +198,7 @@ footer {
       justify-content: space-between;
       align-items: center;
       max-width: 100%;
-      padding: 40px 70px;
+      padding: 2.5rem 4.37rem;
       
       .footer-box {
         display: flex;
@@ -208,14 +208,14 @@ footer {
         
         .footer-logo {
           img {
-            max-height: 150px;
+            max-height: 9.4rem;
           }
         }
         
         .index {
           ul {
             display: flex;
-            gap: 40px;
+            gap: 2.5rem;
             padding-left: 0; 
             list-style-position: inside;
             font-size: 18px;
@@ -257,7 +257,7 @@ footer {
       justify-content: space-between;
       align-items: center;
       max-width: 100%;
-      padding: 40px 100px;
+      padding: 2.5rem 6.25rem;
       
       .footer-box {
         display: flex;
@@ -267,14 +267,14 @@ footer {
         
         .footer-logo {
           img {
-            max-height: 180px;
+            max-height: 11.25rem;
           }
         }
         
         .index {
           ul {
             display: flex;
-            gap: 40px;
+            gap: 2.5rem;
             padding-left: 0; 
             list-style-position: inside;
             font-size: 20px;
@@ -316,7 +316,7 @@ footer {
       justify-content: space-between;
       align-items: center;
       max-width: 100%;
-      padding: 40px 150px;
+      padding: 2.5rem 6.25rem;
       
       .footer-box {
         display: flex;
@@ -326,14 +326,14 @@ footer {
         
         .footer-logo {
           img {
-            max-height: 180px;
+            max-height: 11.25rem;
           }
         }
         
         .index {
           ul {
             display: flex;
-            gap: 40px;
+            gap: 2.5rem;
             padding-left: 0; 
             list-style-position: inside;
             font-size: 22px;

@@ -44,7 +44,7 @@ export default function ContactForm() {
 
           <div class="d-flex">
             <span class="asterisk">*</span>
-            <p class="message-text">LEAVE A MESSAGE</p>
+            <p>LEAVE A MESSAGE</p>
           </div>
           <div class="input-row">
             <textarea name="message" rows="5"></textarea>
