@@ -4,10 +4,10 @@
  */
 export function initialiseForm() {
   const contactForm = document.querySelector('form');
-  const submitButton = contactForm.querySelector('button[type="submit"]');
+  const submitButton = contactForm?.querySelector('button[type="submit"]');
   const asterisks = document.querySelectorAll('.asterisk');
   const validationMessage = document.querySelector('.form-validation-message');
-  const fields = contactForm.querySelectorAll('input:not([type="hidden"]):not([name="_honey"]), textarea');
+  const fields = contactForm?.querySelectorAll('input:not([type="hidden"]):not([name="_honey"]), textarea');
 
   const sentMessage = document.querySelector('.sent-message');
 
@@ -29,7 +29,9 @@ export function initialiseForm() {
     asterisks.forEach(asterisk => {
       asterisk.style.display = show ? 'block' : 'none';
     });
-    validationMessage.style.display = show ? 'flex' : 'none';
+    if (validationMessage) {
+      validationMessage.style.display = show ? 'flex' : 'none';
+    }
   }
 
   function showSentMessage(show) {
@@ -80,13 +82,14 @@ export function initialiseForm() {
   // Set up event listeners
   if (submitButton) {
     submitButton.addEventListener('click', handleSubmit);
-  } else {
-    console.log('Submit button not found');
-  }
+  } 
 
-  fields.forEach(field => {
-    field.addEventListener('input', handleInput);
-  });
+  // Assign handleInput function to input fields if they exist
+  if (fields) {
+    fields.forEach(field => {
+      field.addEventListener('input', handleInput);
+    });
+  }
 
   // initialise validation feedback (hidden by default)
   showValidationFeedback(false);
