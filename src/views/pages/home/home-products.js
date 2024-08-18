@@ -29,9 +29,9 @@ export default function HomeProducts() {
             <div class="product-button">Find out more</div>
         </div>
         <div>
-            <img src="/images/home_01.webp" alt="Home products" width="485" height="458" />
+            <img src="/images/home_01.webp" alt="Home products">
         </div>
-    </div>    
+    </div>
     `
 
     return section;
