@@ -57,17 +57,24 @@
         .testimonial-container {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
     
         .testimonial-contentsbox {
             height:320px;
-            width:190px;
+            width: 33%;
             background-color: $primary; 
             color: #fff;
     
-            &:not(:last-child) { 
-                margin-right: 15px;
+            &:nth-child(1){
+                margin-right: 25px;
             }
+
+            &:not(:last-child) { 
+            margin-bottom: 50px;
+            }
+
+
     
             .testimonial-box{
                 height:240px;
@@ -109,9 +116,15 @@
     }
 
 
+
     @media (min-width: $md){  
         margin-top: 233px;
         
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+        }
+
         .testimonial-contentsbox {
             height:370px;
             width:220px;
