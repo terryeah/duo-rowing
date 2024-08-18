@@ -44,11 +44,11 @@
         h2 {
           text-align: left;
           margin-bottom: 1.25rem;
-          font-size: 14px;
+          font-size: 0.875rem;
         }
 
         form {
-          font-size: 14px;
+          font-size: 0.875rem;
           font-weight: 100;
 
           .input-row {
@@ -63,7 +63,7 @@
               border: none;
               border-bottom: 1px solid #ccc;
               border-radius: 0;
-              font-size: 16px;
+              font-size: 1rem;
 
               &:focus {
                 outline: none;
@@ -81,7 +81,7 @@
               border: none;
               border: 1px solid #ccc;
               border-radius: 0;
-              font-size: 16px;
+              font-size: 1rem;
 
               &:focus {
                 outline: none;
@@ -94,7 +94,7 @@
             background-color: #fff;
             color:  #333;
             border: solid 1px #ccc;
-            font-size: 14px;
+            font-size:  0.875rem;
             font-weight: 100;
             transition: background-color 0.3s ease;
 
@@ -156,13 +156,13 @@
         h2 {
           text-align: left;
           margin-bottom: 1.25rem;
-          font-size: 14px;
+          font-size: 0.875rem;
         }
 
         form {
           display: flex;
           flex-direction: column;
-          font-size: 14px;
+          font-size: 0.875rem;
           font-weight: 100;
           max-width: 37.5rem;
           width: 100%; 
@@ -190,7 +190,7 @@
                 border: none;
                 border-bottom: 1px solid #ccc;
                 border-radius: 0;
-                font-size: 16px;
+                font-size: 1rem;
 
                 &:focus {
                   outline: none;
@@ -223,7 +223,7 @@
             background-color: #fff;
             color: #333;
             border: solid 1px #ccc;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 100;
             transition: background-color 0.3s ease;
 
@@ -278,11 +278,11 @@
 
         h2 {
           margin-bottom: 1.5rem;
-          font-size: 16px; 
+          font-size: 1rem; 
         }
 
         form {
-          font-size: 16px;
+          font-size: 1rem; 
           max-width: 56.25rem; 
 
           .input-row {
@@ -294,7 +294,7 @@
 
               p {
                 margin-right: 0.625rem;
-                font-size: 16px; 
+                font-size: 1rem;  
               }
             }
 
@@ -305,7 +305,7 @@
 
           button {
             padding: 0.625rem 1.5rem;
-            font-size: 16px; 
+            font-size: 1rem;  
           }
         }
       }
@@ -324,11 +324,11 @@
 
       .contact-form {
         h2 {
-          font-size: 18px; 
+          font-size: 1.125rem;
         }
 
         form {
-          font-size: 18px; 
+          font-size: 1.125rem;
           max-width: 73.75rem; 
 
           .input-row {
@@ -339,24 +339,24 @@
             }
 
             p {
-              font-size: 18px; 
+              font-size: 1.125rem; 
             }
 
             input {
-              font-size: 18px;
+              font-size: 1.125rem;
             }
 
             textarea {
-              font-size: 18px; 
+              font-size: 1.125rem;
             }
           }
 
           .message-text {
-            font-size: 18px; 
+            font-size: 1.125rem;
           }
 
           button {
-            font-size: 18px; 
+            font-size: 1.125rem;
           }
         }
       }
@@ -383,11 +383,11 @@
 
         h2 {
           margin-bottom: 1.8rem; 
-          font-size: 20px; 
+          font-size: 1.25rem;
         }
 
         form {
-          font-size: 20px; 
+          font-size: 1.25rem;
           max-width: 54rem;
           width: 100%; 
 
@@ -399,11 +399,11 @@
 
               p {
                 margin-right: 0.625rem;
-                font-size: 20px; 
+                font-size: 1.25rem;
               }
 
               input {
-                font-size: 20px; 
+                font-size: 1.25rem;
               }
             }
 
@@ -412,17 +412,17 @@
             }
 
             textarea {
-              font-size: 20px; 
+              font-size: 1.25rem; 
             }
           }
 
           .message-text {
-            font-size: 20px; 
+            font-size: 1.25rem;
           }
 
           button {
             padding: 0.75rem 1.8rem; 
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 100;
           }
         }

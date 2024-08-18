@@ -2,7 +2,7 @@
     .hero-title{
         margin-left: 2.8rem;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-top: 1rem;
     }
     .hero-textbox{
@@ -10,7 +10,7 @@
         margin: 0 2.8rem;
         margin-top: 1rem;
         font-weight: 200;
-        font-size: 14px;
+        font-size: 0.875rem;
 
         p{
             margin-bottom: 1rem;
@@ -29,7 +29,7 @@
     .hero-title{
         margin-left: 2.8rem;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 1.25rem;
         margin-top: 1rem;
     }
     .hero-textbox{
@@ -37,7 +37,7 @@
         margin: 0 2.8rem;
         margin-top: 1rem;
         font-weight: 200;
-        font-size: 14px;
+        font-size: 0.875rem;
 
         p{
             margin-bottom: 1rem;
@@ -55,7 +55,7 @@
 @media (min-width: $md){
 
     .hero-textbox{
-        font-size: 16px;
+        font-size: 1rem;
     }
 
 }
@@ -63,12 +63,12 @@
 @media (min-width: $lg){
     .hero-title{
         margin-left: 5.3rem;
-        font-size: 25px;
+        font-size: 1.56rem;
     }
     .hero-textbox{
         margin: 0 5.3rem;
         margin-top: 1rem;
-        font-size: 16px;
+        font-size: 1rem;
 
         p{
             margin-bottom: 1rem;
@@ -86,18 +86,18 @@
 @media (min-width: $xl){
     .hero-title{
         margin-left: 5.3rem;
-        font-size: 35px;
+        font-size: 2.1rem;
     }
 
     .hero-textbox{
         max-width: 50%;
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
 @media (min-width: $xl){
     .hero-textbox{
         max-width: 50%;
-        font-size: 24px;
+        font-size: 1.56rem;
     }
 }
