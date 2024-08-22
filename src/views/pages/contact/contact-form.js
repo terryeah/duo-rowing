@@ -55,7 +55,7 @@ export default function ContactForm() {
             <span class="asterisk">*</span>
             <p>Required Field</p>
           </div>
-          <div class="d-flex form-validation-message">
+          <div class="">
             <p class="sent-message">MESSAGE SENT SUCCESSFULLY!</p>
           </div>
         </form>
