@@ -7,7 +7,7 @@ export default function ContactForm() {
       <div class="form-line"></div>
       <div class="contact-form">
         <h2>ENQUIRE TODAY</h2>
-        <form action="https://formsubmit.co/c7a3ed9400bc4121857cd5bcda2d6416" method="POST">
+        <form action="https://formsubmit.co/n0217ayumi@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Duo Rowing - Form Submission">
           <input type="hidden" name="_cc" value="n0217ayumi@gmail.com">
           <input type="hidden" name="_captcha" value="false">
