@@ -1,73 +1,38 @@
-@media only screen and (max-width: 639px) {
-    .contact-bottom {
-        margin-top: 2rem;
-
-        .image-container {
-            width: screen; 
-            height: 12.5rem; 
-            overflow: hidden; 
-            position: relative;
-    
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover; 
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-    }
-
-}
-@media (min-width: $sm){
-
-.contact-bottom {
+.contact-bottom{
     margin-top: 2rem;
 
-    .image-container {
-        width: screen; 
-        height: 12.5rem; 
-        overflow: hidden; 
+    .image-container{
+        width: 100%;
+        height: 12.5rem;
+        overflow: hidden;
         position: relative;
 
-        img {
+        @media(min-width: $sm){
+            width: screen;
+            height: 12.5rem;
+        }
+
+        @media(min-width: $lg){
+            height: 18.75rem;
+        }
+
+        @media(min-width: $xl){
+            height: 25rem;
+        }
+
+        @media(min-width: $xxl){
+            height: 31.25rem;
+        }
+
+        img{
             width: 100%;
             height: 100%;
-            object-fit: cover; 
+            object-fit: cover;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
     }
-}
-}
 
-@media (min-width: $lg){
-
-    .contact-bottom {
-        .image-container {
-            height: 18.75rem; 
-        }
-    }
-}
-
-@media (min-width: $xl){
-
-    .contact-bottom {
-        .image-container {
-            height: 25rem; 
-        }
-    }
-}
-
-@media (min-width: $xxl){
-
-    .contact-bottom {
-        .image-container {
-            height: 31.25rem; 
-        }
-    }
 }
