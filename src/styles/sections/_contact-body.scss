@@ -1,84 +1,41 @@
-@media only screen and (max-width: 639px) {
+.contact-body{
     .contact-container{
         .contact-contentsbox{
 
             .contact-text{
                 max-width: screen;
                 margin: 1rem 2.5rem;
+
+                @media(min-width: $sm) {
+                    width: 50%;
+                    margin: 1rem 2.5rem;
+                }
+
+                @media(min-width: $lg){
+                    padding: 2rem;
+                }
+
+                @media(min-width: $xxl){
+                    padding: 2.5rem;
+                }
                 
                 p{
                     font-size: 0.875rem;
                     font-weight: 100;
+
+                    @media(min-width: $lg){
+                        font-size: 1rem;
+                    }
+
+                    @media(min-width: $xl){
+                        font-size: 1.125rem;
+                    }
+
+                    @media(min-width: $xxl){
+                        font-size: 1.25rem;
+                    }
                 }
             }
         }
     }
-}
-
-@media (min-width: $sm){
-    .contact-container{
-        .contact-contentsbox{
-
-            .contact-text{
-                width: 50%;
-                margin: 1rem 2.5rem;
-
-                p{
-                    font-size: 0.875rem;
-                    font-weight: 100;
-                }
-            }
-        }
-    }
-
-}
-
-@media (min-width: $lg){
-    .contact-container{
-        .contact-contentsbox{
-
-            .contact-text{
-                padding: 2rem;
-
-                p{
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
-
-}
-
-@media (min-width: $xl){
-    .contact-container{
-
-        .contact-contentsbox{
-
-            .contact-text{
-                padding: 2rem;
-
-                p{
-                    font-size: 1.125rem;
-                }
-            }
-        }
-    }
-
-}
-
-@media (min-width: $xxl){
-    .contact-container{
-
-        .contact-contentsbox{
-
-            .contact-text{
-                padding: 1.5rem;
-
-                p{
-                    font-size: 1.25rem;
-                }
-            }
-        }
-    }
-
 }
