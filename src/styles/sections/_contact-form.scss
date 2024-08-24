@@ -1,16 +1,28 @@
-@media only screen and (max-width: 639px) {
-  .asterisk {
-    color: red;
+.contact-form {
+  margin-top: 2rem;
+
+  @media (min-width: $sm) {
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: $lg) {
+    margin-top: 4rem;
+  }
+
+  .asterisk,
+  .sent-message {
     display: none;
     margin-right: 1rem;
   }
 
-  .sent-message{
-    color: blue;
-    display: none;
-    margin-right: 1rem;
+  .asterisk {
+    color: red;
   }
-  
+
+  .sent-message {
+    color: blue;
+  }
+
   .message-text {
     margin-bottom: 1rem;
   }
@@ -19,41 +31,127 @@
     margin-top: 1rem;
   }
 
-  .contact-form{
-    margin-top: 2rem;
+  .form-container {
+    border-left: solid 1px #333;
+    margin: 0 1rem;
+    position: relative;
 
-    .form-container{
-      border-left: solid 1px #333;
-      margin: 0 1rem;
-      position: relative;
+    @media (min-width: $lg) {
+      margin: 0 1.5rem;
+    }
 
-      .form-line{
-        width: 1px;
-        height: 3.75rem;
-        background-color: #333;
-        position: absolute;
+    @media (min-width: $xxl) {
+      margin: 0 2rem;
+    }
+
+    .form-line {
+      width: 1px;
+      height: 2rem;
+      background-color: #333;
+      position: absolute;
+      top: 0.5rem;
+
+      @media (min-width: $lg) {
         top: 1rem;
-
       }
 
-      .contact-form {
-        max-width: screen;
-        margin: 0 auto;
-        padding: 1.25rem;
+      @media (min-width: $xxl) {
+        top: 2rem;
+      }
+    }
 
-        h2 {
-          text-align: left;
-          margin-bottom: 1.25rem;
-          font-size: 0.875rem;
+    .contact-form {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 1.25rem;
+
+      @media (min-width: $lg) {
+        padding: 1.87rem;
+      }
+
+      @media (min-width: $xxl) {
+        padding: 2.5rem;
+      }
+
+      h2 {
+        text-align: left;
+        margin-bottom: 1.25rem;
+        font-size: 0.875rem;
+
+        @media (min-width: $lg) {
+          margin-bottom: 1.5rem;
+          font-size: 1rem;
         }
 
-        form {
-          font-size: 0.875rem;
-          font-weight: 100;
+        @media (min-width: $xxl) {
+          margin-bottom: 1.8rem;
+          font-size: 1.25rem;
+        }
+      }
 
-          .input-row {
+      form {
+        font-size: 0.875rem;
+        font-weight: 100;
+
+        @media (min-width: $sm) {
+          display: flex;
+          flex-direction: column;
+          max-width: 37.5rem;
+          width: 100%;
+        }
+
+        @media (min-width: $md) {
+          max-width: 45rem;
+        }
+
+        @media (min-width: $lg) {
+          max-width: 54rem;
+        }
+
+        .input-row {
+          @media (min-width: $sm) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.625rem;
+            width: 100%;
+          }
+
+          @media (min-width: $lg) {
+            margin-bottom: 0.9rem;
+            gap: 1rem;
+          }
+
+          .input-contents {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            @media (min-width: $lg) {
+              margin-bottom: 0.9rem;
+            }
+
+            @media (min-width: $xl) {
+              margin-bottom: 1.5rem;
+            }
+
             p {
               margin: 0.6rem 0;
+
+              @media (min-width: $sm) {
+                margin-right: 0.3rem;
+                white-space: nowrap;
+              }
+
+              @media (min-width: $lg) {
+                margin-right: 0.625rem;
+                font-size: 1rem;
+              }
+
+              @media (min-width: $xl) {
+                font-size: 1.125rem;
+              }
             }
 
             input {
@@ -65,370 +163,72 @@
               border-radius: 0;
               font-size: 1rem;
 
+              @media (min-width: $xl) {
+                font-size: 1.125rem;
+              }
+
               &:focus {
                 outline: none;
                 border-bottom: 1px solid #333;
               }
 
-                &:last-child {
+              &:last-child {
                 margin-bottom: 1rem;
-                }
-            }
-
-            textarea {
-              width: 100%;
-              padding: 0.6rem;
-              border: none;
-              border: 1px solid #ccc;
-              border-radius: 0;
-              font-size: 1rem;
-
-              &:focus {
-                outline: none;
               }
             }
           }
 
-          button {
-            padding: 0.3rem 1.25rem;
-            background-color: #fff;
-            color:  #333;
-            border: solid 1px #ccc;
-            font-size:  0.875rem;
-            font-weight: 100;
-            transition: background-color 0.3s ease;
+          textarea {
+            width: 100%;
+            margin: 0.6rem 0rem;
+            border: none;
+            border: 1px solid #ccc;
+            border-radius: 0;
+            font-size: 1rem;
 
-            &:hover {
-              background-color: $primary;
-              color: #fff;
-              cursor: pointer;
-            }
-          }
-        }
-      }
-
-    }
-  }   
-}
-
-@media (min-width: $sm) {
-  .asterisk {
-    color: red;
-    display: none;
-    margin-right: 1rem;
-  }
-
-  .sent-message{
-    color: blue;
-    display: none;
-    margin-right: 1rem;
-  }
-  
-  .message-text {
-    margin-bottom: 1rem;
-  }
-
-  .form-validation-message {
-    margin-top: 1rem;
-  }
-
-  .contact-form {
-    margin: 1.5rem;
-
-    .form-container {
-      border-left: solid 1px #333;
-      margin: 0 1rem;
-      position: relative;
-
-      .form-line {
-        width: 1px;
-        height: 3.75rem;
-        background-color: #333;
-        position: absolute;
-        top: 3.5rem;
-      }
-
-      .contact-form {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 1.25rem;
-
-        h2 {
-          text-align: left;
-          margin-bottom: 1.25rem;
-          font-size: 0.875rem;
-        }
-
-        form {
-          display: flex;
-          flex-direction: column;
-          font-size: 0.875rem;
-          font-weight: 100;
-          max-width: 37.5rem;
-          width: 100%; 
-
-          .input-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.625rem;
-            width: 100%; 
-
-            .input-contents {
-              display: flex;
-              align-items: center;
-              width: 100%; 
-              margin-bottom: 1rem;
-
-              p {
-                margin-right: 0.3rem;
-                white-space: nowrap; 
-              }
-
-              input {
-                width: 100%; 
-                border: none;
-                border-bottom: 1px solid #ccc;
-                border-radius: 0;
-                font-size: 1rem;
-
-                &:focus {
-                  outline: none;
-                  border-bottom: 1px solid #333;
-                }
-              }
-            }
-
-            .input-contents.space input {
-              margin-right: 1rem; 
-            }
-
-            textarea {
-              width: 100%;
-              padding: 0.625rem;
-              border: none;
-              border: 1px solid #ccc;
-              border-radius: 0;
-              font-size: 16px;
-
-              &:focus {
-                outline: none;
-              }
-            }
-          }
-
-          button {
-            width: 20%;
-            padding: 0.3rem 1.25rem;
-            background-color: #fff;
-            color: #333;
-            border: solid 1px #ccc;
-            font-size: 0.875rem;
-            font-weight: 100;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-              background-color: $primary;
-              color: #fff;
-              cursor: pointer;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-
-@media (min-width: $md) {
-  .contact-form {
-
-    .form-container {
-
-      .form-line {
-        height: 3.75rem;
-        top: 3.5rem;
-      }
-
-      .contact-form {
-        form {
-          max-width: 45rem; 
-        }
-      }
-    }
-  }
-}
-
-
-
-@media (min-width: $lg) {
-  .contact-form {
-    margin: 3rem;
-
-    .form-container {
-      margin: 0 1.5rem; 
-
-      .form-line {
-        height: 4.6rem; 
-        top: 4.5rem;
-      }
-
-      .contact-form {
-        padding: 1.87rem; 
-
-        h2 {
-          margin-bottom: 1.5rem;
-          font-size: 1rem; 
-        }
-
-        form {
-          font-size: 1rem; 
-          max-width: 56.25rem; 
-
-          .input-row {
-            margin-bottom: 0.9rem;
-            gap: 1rem; 
-
-            .input-contents {
-              margin-bottom: 0.9rem;
-
-              p {
-                margin-right: 0.625rem;
-                font-size: 1rem;  
-              }
-            }
-
-            textarea {
+            @media (min-width: $lg) {
               padding: 0.75rem;
             }
+
+            @media (min-width: $xl) {
+              font-size: 1.125rem;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        button {
+          padding: 0.3rem 1.25rem;
+          background-color: #fff;
+          color: #333;
+          border: solid 1px #ccc;
+          font-size: 0.875rem;
+          font-weight: 100;
+          transition: background-color 0.3s ease;
+
+          @media (min-width: $sm) {
+            width: 20%;
           }
 
-          button {
+          @media (min-width: $lg) {
             padding: 0.625rem 1.5rem;
-            font-size: 1rem;  
-          }
-        }
-      }
-    }
-  }
-}
-
-
-@media (min-width: $xl) {
-  .contact-form {
-    .form-container {
-      .form-line {
-        height: 4.3rem;
-        top: 5rem; 
-      }
-
-      .contact-form {
-        h2 {
-          font-size: 1.125rem;
-        }
-
-        form {
-          font-size: 1.125rem;
-          max-width: 73.75rem; 
-
-          .input-row {
-            gap: 1rem; 
-
-            .input-contents {
-              margin-bottom: 1.5rem;
-            }
-
-            p {
-              font-size: 1.125rem; 
-            }
-
-            input {
-              font-size: 1.125rem;
-            }
-
-            textarea {
-              font-size: 1.125rem;
-            }
+            font-size: 1rem;
           }
 
-          .message-text {
+          @media (min-width: $xl) {
             font-size: 1.125rem;
           }
 
-          button {
-            font-size: 1.125rem;
+          &:hover {
+            background-color: $primary;
+            color: #fff;
+            cursor: pointer;
           }
         }
       }
     }
   }
 }
-
-
-@media (min-width: $xxl) {
-  .contact-form {
-    margin: 4rem; 
-    .form-container {
-      margin: 0 2rem; 
-
-      .form-line {
-        width: 1px;
-        height: 4.375rem; 
-        top: 6rem;
-      }
-
-      .contact-form {
-        margin: 0 auto;
-        padding: 2.5rem; 
-
-        h2 {
-          margin-bottom: 1.8rem; 
-          font-size: 1.25rem;
-        }
-
-        form {
-          font-size: 1.25rem;
-          max-width: 54rem;
-          width: 100%; 
-
-          .input-row {
-            margin-bottom: 1.25rem; 
-
-            .input-contents {
-              margin-bottom: 1.5rem;
-
-              p {
-                margin-right: 0.625rem;
-                font-size: 1.25rem;
-              }
-
-              input {
-                font-size: 1.25rem;
-              }
-            }
-
-            .input-contents.space input {
-              margin-right: 1rem; 
-            }
-
-            textarea {
-              font-size: 1.25rem; 
-            }
-          }
-
-          .message-text {
-            font-size: 1.25rem;
-          }
-
-          button {
-            padding: 0.75rem 1.8rem; 
-            font-size: 1.25rem;
-            font-weight: 100;
-          }
-        }
-      }
-    }
-  }
-}
-
-
