@@ -1,68 +1,4 @@
-@media only screen and (max-width: 639px) {
-    .product-customer{
-        position: relative;
-    
-            img{
-                width: 100%;
-                vertical-align: bottom;
-            }
-    
-            .customer-contentsbox {
-                position: absolute; 
-                bottom: 0; 
-                left: 0; 
-                width: 100%; 
-                height: 40%; 
-                background: linear-gradient(0deg, rgba(37, 40, 48, 1) 0%, 
-                rgba(37, 40, 48, 1) 65%, rgba(37, 40, 48, 0.8) 80%, rgba(37, 40, 48, 0) 100%); 
-                display: flex; 
-                align-items: center; 
-                color:#fff;
-                font-weight: 100;
-                font-size: 0.625rem;
-    
-                .testimonial-box{
-                    width:screen;
-                    height: auto;
-                    padding-left: 3rem;
-                    padding-top: 1rem;
-    
-                    .customer-textbox{
-                        margin-top: 0.625rem;
-                        border-left:solid #fff 1px;
-                        position: relative;
-        
-                        .textbox-line{
-                            position: absolute;
-                            bottom: 0;
-                            width: 1px;
-                            height: 0.625rem;
-                            background-color: #fff;
-                        }
-        
-                        .textbox-title{
-                            padding-top: 0.625rem;
-                            margin-left:  0.75rem;
-                            font-size: 0.75rem;
-        
-                            .title-main{
-                                font-weight:400;
-                                margin-bottom:  0.3rem;
-                            }
-                        }
-                
-                        .textbox-text{
-                            padding-top: 1.25rem;
-                            margin-left: 0.75rem;
-                        }
-                    }
-                }
-            }
-        }    
-}
-
-@media (min-width: $sm){
-    .product-customer{
+.product-customer{
     position: relative;
 
         img{
@@ -75,7 +11,7 @@
             bottom: 0; 
             left: 0; 
             width: 100%; 
-            height: 150px; 
+            height: 40%; 
             background: linear-gradient(0deg, rgba(37, 40, 48, 1) 0%, 
             rgba(37, 40, 48, 1) 65%, rgba(37, 40, 48, 0.8) 80%, rgba(37, 40, 48, 0) 100%); 
             display: flex; 
@@ -84,33 +20,84 @@
             font-weight: 100;
             font-size: 0.625rem;
 
+            @media(min-width: $sm){
+                height: 150px; 
+            }
+
+            @media(min-width: $md){
+                height: 200px; 
+            }
+
+            @media(min-width: $lg){
+                height: 300px; 
+            }
+
+            @media(min-width: $xl){
+                height: 320px; 
+                font-size: 0.75rem;
+            }
+
             .testimonial-box{
                 width:screen;
                 height: auto;
-                padding-left: 5rem;
-                padding-top: 2rem;
+                padding-left: 3rem;
+                padding-top: 1rem;
+
+                @media(min-width: $sm){
+                    padding-left: 5rem;
+                    padding-top: 2rem;
+                }
+
+                @media(min-width: $md){
+                    padding-left: 7rem;
+                    padding-top: 4rem;
+                }
+
+                @media(min-width: $lg){
+                    padding-top: 5rem;
+                }
+
+                @media(min-width: $xl){
+                    padding-top: 7rem;
+                }
 
                 .customer-textbox{
                     margin-top: 0.625rem;
                     border-left:solid #fff 1px;
                     position: relative;
-    
+
                     .textbox-line{
                         position: absolute;
                         bottom: 0;
                         width: 1px;
                         height: 0.625rem;
                         background-color: #fff;
+
+                        @media(min-width: $md){
+                            height: 0.875rem;
+                        }
+
+                        @media(min-width: $lg){
+                            height: 1rem;
+                        }
                     }
-    
+
                     .textbox-title{
                         padding-top: 0.625rem;
-                        margin-left: 0.75rem;
+                        margin-left:  0.75rem;
                         font-size: 0.75rem;
-    
+
+                        @media(min-width: $md){
+                            padding-top: 1.25rem;
+                        }
+
+                        @media(min-width: $lg){
+                            padding-top: 1.3rem;
+                        }
+
                         .title-main{
                             font-weight:400;
-                            margin-bottom: 0.3rem;
+                            margin-bottom:  0.3rem;
                         }
                     }
             
@@ -121,87 +108,4 @@
                 }
             }
         }
-    }    
-}
-
-@media (min-width: $md){
-    .product-customer{
-        position: relative;
-    
-            .customer-contentsbox {
-                height: 200px; 
-    
-                .testimonial-box{
-                    padding-left: 7rem;
-                    padding-top: 4rem;
-    
-                    .customer-textbox{
-        
-                        .textbox-line{
-                            height: 0.875rem;
-                        }
-        
-                        .textbox-title{
-                            padding-top: 1.25rem;
-                        }
-                    }
-                }
-            }
-        }    
-
-}
-
-
-
-
-@media (min-width: $lg){
-   .product-customer{
-
-    .customer-contentsbox {
-        height: 300px; 
-
-        .testimonial-box{
-            padding-left: 7rem;
-            padding-top: 5rem;
-
-            .customer-textbox{
-
-                .textbox-title{
-                    padding-top: 1.3rem;
-
-                    .title-main{
-                        font-weight:100;
-                    }
-                }
-            }
-        }
-    }
-    } 
-
-}
-
-@media (min-width: $xl){
-    .product-customer{
-     .customer-contentsbox {
-         height: 320px; 
-         font-size: 0.75rem;
- 
-         .testimonial-box{
-             padding-left: 7rem;
-             padding-top: 7rem;
- 
-             .customer-textbox{
- 
-                 .textbox-line{
-                     height: 1rem;
-                 }
- 
-                 .textbox-title{
-                     font-size:  0.875rem;
-                 }
-             }
-         }
-     }
-     } 
- 
- }
+}    
