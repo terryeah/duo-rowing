@@ -1,13 +1,57 @@
-@media only screen and (max-width: 639px) {
+.product-body{
     .detail-container{
         margin: 0 3.5rem;
+
+        @media(min-width:$sm){
+            display:flex;
+            justify-content: space-between;
+            margin: 0 4rem;
+        }
+
+        @media(min-width: $lg){
+            margin: 0 6rem;
+        }
+
+        @media(min-width: $xl){
+            margin: 0 8rem;
+        }
+
+        @media(min-width: $xxl){
+            margin: 0 10rem;
+        }
 
         .detail-box{
             margin-bottom: 1.8rem;
 
+
+            @media(min-width: $md){
+                margin-bottom: 3.75rem;
+            }
+
+            @media(min-wdith: $xl){
+                margin-bottom: 4.3rem;
+            }
+
+            @media(min-width: $xxl){
+                margin-bottom: 6.25rem;
+            }
+
             .title{
                 font-weight: 700;
                 font-size: 0.875rem;
+
+                @media(min-width: $lg){
+                    font-size: 1rem;
+                }
+
+                @media(min-width: $xl){
+                    font-size: 1.125rem;
+                }
+
+                @media(min-width: $xxl){
+                    font-size: 1.375rem;
+                }
+
             }
             .text-box{
                 font-size: 0.625rem;
@@ -15,8 +59,36 @@
                 margin-top: 1rem;
                 width: 90%;
 
+                @media(min-width: $sm){
+                    width: 200px;
+                }
+
+                @media(min-width: $md){
+                    font-size: 0.75rem;
+                    width: 220px;
+                }
+
+                @media(min-wdith: $lg){
+                    font-size: 0.875rem;
+                    width: 300px;
+                }
+
+                @media(min-width: $xl){
+                    font-size: 1rem;
+                    width: 400px;
+                }
+
+                @media(min-width: $xxl){
+                    font-size: 1.25rem;
+                    width: 500px;
+                }
+
                 ul {
                     padding-left: 0.625rem;
+
+                    @media(min-width: $md){
+                        padding-left: 0.75rem;
+                    }
                 }
             }
 
@@ -24,10 +96,35 @@
                 font-size: 0.625rem;
                 font-weight: 200;
                 margin-top: 1rem;
+
+                @media(min-width: $md){
+                    font-size: 0.75rem;
+                }
+
+                @media(min-width: $lg){
+                    font-size: 0.875rem;
+                }
+
+                @media(min-width: $xl){
+                    font-size: 1rem;
+                }
+
+                @media(min-width: $xxl){
+                    font-size: 1.25rem;
+                }
             }
 
             .price-table{
                 width: 230px;
+                
+                @media(min-width: $lg){
+                    width: 280px;
+                }
+
+                @media(min-width: $xxl){
+                    width: 350px;
+                }
+
                 .price-row{
                     justify-content: space-between;
                     display: flex;
@@ -42,187 +139,16 @@
                     margin: 0.5rem 0;
                     font-size: 0.625rem;
                     font-weight: 200;
+
+                    @media(min-width: $lg){
+                        font-size: 0.875rem;
+                    }
+
+                    @media(min-width: $xxl){
+                        font-size: 1.25rem;
+                    }
                 }
             }
         }
     }   
-}
-
-@media (min-width: $sm){
-    .detail-container{
-        display:flex;
-        margin: 0 4rem;
-        justify-content: space-between;
-
-        .detail-box{
-            margin-bottom: 1.8rem;
-
-            .title{
-                font-weight: 700;
-                font-size: 0.875rem;
-            }
-            .text-box{
-                font-size: 0.625rem;
-                font-weight: 200;
-                margin-top: 1rem;
-                width: 200px;
-
-                ul {
-                    padding-left: 0.625rem;
-                }
-            }
-
-            p{
-                font-size: 0.625rem;
-                font-weight: 200;
-                margin-top: 1rem;
-            }
-
-            .price-table{
-                width: 230px;
-                .price-row{
-                    justify-content: space-between;
-                    display: flex;
-
-                    &:not(:last-child){
-                        border-bottom:solid black 1px;
-                    }
-                }
-
-
-                .price-item{
-                    margin: 0.5rem 0;
-                    font-size: 0.625rem;
-                    font-weight: 200;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: $md){
-    .detail-container{
-
-        .detail-box{
-            margin-bottom: 3.75rem;
-
-            .title{
-                font-size: 0.875rem;  
-            }
-            .text-box{
-                font-size: 0.75rem;
-                width: 220px;
-
-                ul {
-                    padding-left: 0.75rem;
-                }
-            }
-
-            p{
-                font-size: 0.75rem;
-            }
-        }
-    }
-
-}
-
-@media (min-width: $lg){
-    .detail-container{
-        margin: 0 6rem;
-        .detail-box{
-            margin-bottom: 3.1rem;
-
-            .title{
-                font-size: 1rem;
-            }
-            .text-box{
-                font-size: 0.875rem;
-                width: 300px;
-
-                ul {
-                    padding-left: 0.625rem;
-                }
-            }
-
-            p{
-                font-size: 0.875rem;
-            }
-
-            .price-table{
-                width: 230px;
-
-                .price-item{
-                    font-size: 0.875rem;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: $xl){
-    .detail-container{
-        margin: 0 8rem;
-
-        .detail-box{
-            margin-bottom: 4.3rem;
-
-            .title{
-                font-size: 1.125rem;
-            }
-            .text-box{
-                font-size: 1rem;
-                width: 400px;
-
-                ul {
-                    padding-left: 0.625rem;
-                }
-            }
-
-            p{
-                font-size: 1rem;
-            }
-
-            .price-table{
-                width: 280px;
-
-                .price-item{
-                    font-size: 0.875rem;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: $xxl){
-    .detail-container{
-        margin: 0 10rem;
-
-        .detail-box{
-            margin-bottom: 6.25rem;
-
-            .title{
-                font-size: 1.375rem;
-            }
-            .text-box{
-                font-size: 1.25rem;
-                width: 500px;
-
-                ul {
-                    padding-left:  0.625rem;
-                }
-            }
-
-            p{
-                font-size: 1.25rem;
-            }
-
-            .price-table{
-                width: 350px;
-
-                .price-item{
-                    font-size: 1.25rem;
-                }
-            }
-        }
-    }
 }
