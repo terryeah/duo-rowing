@@ -1,16 +1,34 @@
-@media only screen and (max-width: 639px) {
+.product-detail{
     .hero-title{
-        margin-left: 2.8rem;
         font-weight: 700;
-        font-size: 1.25rem;
         margin-top: 1rem;
+        margin-left: 2.8rem;
+        font-size: 1.25rem;
+
+        @media(min-width: $lg){
+            margin-left: 5.3rem;
+            font-size: 1.56rem;
+        }
+
+        @media(min-width: $xl){
+            font-size: 2.1rem;
+        }
     }
     .hero-textbox{
         max-width: 50%;
-        margin: 0 2.8rem;
-        margin-top: 1rem;
         font-weight: 200;
         font-size: 0.875rem;
+        margin: 0 2.8rem;
+        margin-top: 1rem;
+
+        @media(min-width: $md){
+            font-size: 1rem;
+        }   
+
+        @media(min-width: $lg){
+            margin-top: 1rem;
+            margin: 0 5.3rem;
+        }
 
         p{
             margin-bottom: 1rem;
@@ -18,86 +36,13 @@
     }
     .components-box{
         width: screen;
-        margin: 0 2.8rem;
         margin-top: 5rem;
         height: 180px;
         background-color: #d3d3d3;
+        margin: 0 2.8rem;
+
+        @media(min-width: $lg){
+            margin: 0 5rem;
+        }
     }  
-}
-
-@media (min-width: $sm){
-    .hero-title{
-        margin-left: 2.8rem;
-        font-weight: 700;
-        font-size: 1.25rem;
-        margin-top: 1rem;
-    }
-    .hero-textbox{
-        max-width: 50%;
-        margin: 0 2.8rem;
-        margin-top: 1rem;
-        font-weight: 200;
-        font-size: 0.875rem;
-
-        p{
-            margin-bottom: 1rem;
-        }
-    }
-    .components-box{
-        width: screen;
-        margin: 0 2.8rem;
-        margin-top: 5rem;
-        height: 180px;
-        background-color: #d3d3d3;
-    }
-}
-
-@media (min-width: $md){
-
-    .hero-textbox{
-        font-size: 1rem;
-    }
-
-}
-
-@media (min-width: $lg){
-    .hero-title{
-        margin-left: 5.3rem;
-        font-size: 1.56rem;
-    }
-    .hero-textbox{
-        margin: 0 5.3rem;
-        margin-top: 1rem;
-        font-size: 1rem;
-
-        p{
-            margin-bottom: 1rem;
-        }
-    }
-    .components-box{
-        margin: 0 5rem;
-        margin-top: 5rem;
-        height: 180px;
-        background-color: #d3d3d3;
-    }
-
-}
-
-@media (min-width: $xl){
-    .hero-title{
-        margin-left: 5.3rem;
-        font-size: 2.1rem;
-    }
-
-    .hero-textbox{
-        max-width: 50%;
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: $xl){
-    .hero-textbox{
-        max-width: 50%;
-        font-size: 1.56rem;
-    }
 }
