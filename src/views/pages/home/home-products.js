@@ -28,7 +28,7 @@ export default function HomeProducts() {
             </div>
             <div class="product-button">Find out more</div>
         </div>
-        <div>
+        <div class="image-wrapper">
             <img src="/images/home_01.webp" alt="Home products">
         </div>
     </div>

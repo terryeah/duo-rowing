@@ -3,16 +3,17 @@
     margin-bottom: 5rem;
 
     .product-container{
+
         @media(min-width: $sm){
         display:flex;
-        max-width: 921px;
-        margin:auto;
+        max-width: screen;
+        padding: 0 1rem;
         }
 
         @media(min-width: $xl){
             max-width: 1180px;
         }
-    }
+    
 
     .product-textcontainer{
         width:screen;
@@ -20,9 +21,9 @@
         padding: 1rem;
 
         @media(min-width: $sm){
-            margin-left: 4.3rem;
-            height:246px;
-            width:202px;
+            width: 50%;
+            margin-left: 0;
+            padding: 0;
         }
 
         @media(min-width: $md){
@@ -45,11 +46,7 @@
 
 
         .title{
-            font-size: 0.875rem;
-
-            @media(min-width: $sm){
-                font-size: 0.5rem;
-            }
+                font-size: 1rem;
 
             @media(min-width: $md){
                 font-size: 0.625rem;
@@ -74,8 +71,8 @@
             position: relative;
 
             @media(min-width: $sm){
-                width:190px;
-                height:200px;
+                max-width: 90%;
+                height:auto;
             }
 
             @media(min-width: $md){
@@ -104,7 +101,7 @@
 
                 @media(min-width: $sm){
                     top: 1.25rem;
-                    height:1.8rem;
+                    height:3rem;
                 }
 
                 @media(min-width: $md){
@@ -132,7 +129,7 @@
                 margin-left: 0.3rem;
 
                 @media(min-width: $sm){
-                    font-size: 0.625rem;
+                    font-size: 1rem;
                 }
 
                 @media(min-width: $md){
@@ -158,7 +155,7 @@
                 margin-left: 0.3rem;
 
                 @media(min-width: $sm){
-                    font-size: 0.625rem;
+                    font-size: 1rem;
                 }
             
                 @media(min-width: $md){
@@ -186,7 +183,7 @@
         margin-left: 0.3rem;
 
         @media(min-width: $sm){
-            font-size: 0.625rem;
+            font-size: 1rem;
         }
         @media(min-width: $lg){
             font-size: 1rem;
@@ -199,25 +196,31 @@
         }
     }
 
-    img{
-        width:100%;
-        margin: 0; 
-        
+    .image-wrapper{
+        width: 100%;
+
         @media(min-width: $sm){
-            margin-left: 5.6rem;
-            width:60%;
-            height: auto;
+            width: 50%;
         }
 
-        @media(min-width: $lg){
-            width:70%;
-        }
-
-        @media(min-width: $xl){
-            margin-left: 4.3rem;
-            width:80%;
+        img{
+            width:100%;
+            margin: 0; 
+            
+            @media(min-width: $sm){
+                height: auto;
+            }
+    
+            @media(min-width: $lg){
+                width:70%;
+            }
+    
+            @media(min-width: $xl){
+                margin-left: 4.3rem;
+                width:80%;
+            }
         }
     }
-
+}
 
 }
