@@ -10,8 +10,12 @@
         padding: 0 1rem;
         }
 
-        @media(min-width: $xl){
-            max-width: 1180px;
+        @media (min-width: 1441px){
+            max-width: 1441px;
+            margin: auto; 
+            display: flex;
+            justify-content: center; 
+            position: relative; 
         }
     
 
@@ -26,41 +30,9 @@
             padding: 0;
         }
 
-        @media(min-width: $md){
-            margin-left: 5.6rem;
-            height:295px;
-            width:243px;
-        }
-
-        @media(min-width: $lg){
-            margin-left: 4.3rem;
-            width:416px;
-            height:506px;
-        }
-
-        @media(min-width: $xl){
-            margin-left: 8.1rem;
-            width:520px;
-            height:633px;
-        }
-
 
         .title{
-                font-size: 1rem;
-
-            @media(min-width: $md){
-                font-size: 0.625rem;
-            }
-
-            @media(min-width: $lg){
-                font-size: 0.75rem;
-            }
-
-            @media(min-width: $xl){
-                font-size: 1rem;
-            }
-
-
+            font-size: 1rem;
         }
 
         .product-textbox{
@@ -73,23 +45,6 @@
             @media(min-width: $sm){
                 max-width: 90%;
                 height:auto;
-            }
-
-            @media(min-width: $md){
-                width:228px;
-                height:240px;
-                margin-top: 0.5rem;
-            }
-
-            @media(min-width: $lg){
-                height:320px;
-                width:324px;
-                margin-top: 0.9rem;
-            }
-
-            @media(min-width: $xl){
-                width:380px;
-                height:401px;
             }
 
             .textbox-line{
@@ -129,23 +84,20 @@
                 margin-left: 0.3rem;
 
                 @media(min-width: $sm){
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                 }
 
                 @media(min-width: $md){
-                    font-size: 0.75rem;
                     padding-top: 1.56rem;
                     margin-left: 0.625rem;
                 }
 
                 @media(min-width: $lg){
-                    font-size: 1rem;
                     padding-top: 1.8rem;
                     margin-left: 0.7rem;
                 }
 
                 @media(min-width: $xl){
-                    font-size: 1.25rem;
                     padding-top: 2.5rem;
                 }
             }
@@ -155,24 +107,18 @@
                 margin-left: 0.3rem;
 
                 @media(min-width: $sm){
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                 }
             
                 @media(min-width: $md){
-                    font-size: 0.75rem;
                     padding-top: 1.56rem;
                     margin-left: 0.625rem;
                 }
 
                 @media(min-width: $lg){
-                    font-size: 1rem;
                     padding-top: 1.8rem;
                     margin-left: 0.7rem;
                 }
-
-                @media(min-width: $xl){
-                    font-size: 1.25rem;
-                }  
 
             }
         }
@@ -183,16 +129,11 @@
         margin-left: 0.3rem;
 
         @media(min-width: $sm){
-            font-size: 1rem;
+            font-size: 1.25rem;
         }
         @media(min-width: $lg){
-            font-size: 1rem;
             margin-top: 1.8rem;
             margin-left: 0.7rem;
-        }
-
-        @media(min-width: $xl){
-            font-size: 1.25rem;
         }
     }
 
@@ -206,19 +147,6 @@
         img{
             width:100%;
             margin: 0; 
-            
-            @media(min-width: $sm){
-                height: auto;
-            }
-    
-            @media(min-width: $lg){
-                width:70%;
-            }
-    
-            @media(min-width: $xl){
-                margin-left: 4.3rem;
-                width:80%;
-            }
         }
     }
 }
