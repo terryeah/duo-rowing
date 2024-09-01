@@ -17,13 +17,9 @@
     .hero-textbox{
         max-width: 50%;
         font-weight: 200;
-        font-size: 0.875rem;
+        font-size: 1rem;
         margin: 0 2.8rem;
         margin-top: 1rem;
-
-        @media(min-width: $md){
-            font-size: 1rem;
-        }   
 
         @media(min-width: $lg){
             margin-top: 1rem;

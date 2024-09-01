@@ -18,7 +18,7 @@
             align-items: center; 
             color:#fff;
             font-weight: 100;
-            font-size: 0.625rem;
+            font-size: 1rem;
 
             @media(min-width: $sm){
                 height: 150px; 
@@ -34,7 +34,10 @@
 
             @media(min-width: $xl){
                 height: 320px; 
-                font-size: 0.75rem;
+            }
+
+            @media(min-width: $xxl){
+                font-size: 1.25rem;
             }
 
             .testimonial-box{
@@ -70,7 +73,7 @@
                         position: absolute;
                         bottom: 0;
                         width: 1px;
-                        height: 0.625rem;
+                        height: 1rem;
                         background-color: #fff;
 
                         @media(min-width: $md){
@@ -85,7 +88,7 @@
                     .textbox-title{
                         padding-top: 0.625rem;
                         margin-left:  0.75rem;
-                        font-size: 0.75rem;
+                        font-size: 1rem;
 
                         @media(min-width: $md){
                             padding-top: 1.25rem;
@@ -93,6 +96,10 @@
 
                         @media(min-width: $lg){
                             padding-top: 1.3rem;
+                        }
+
+                        @media(min-width: $xxl){
+                            font-size: 1.25rem;
                         }
 
                         .title-main{

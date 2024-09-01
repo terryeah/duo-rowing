@@ -19,8 +19,8 @@ export default function Productbody() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim ad minim veniam, 
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                    <p>Download your free instruction guide.</p>
                 </div>
-                <p>Download your free instruction guide.</p>
             </div>
         </div>
 

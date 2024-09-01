@@ -47,23 +47,10 @@
                 }
 
                 p{
-                    font-size: 0.875rem;
+                    font-size: 1rem;
                     font-weight: 100;
                     padding-bottom: 1rem;
-
-
-                    @media (min-width: $sm){
-                        font-size: 0.75rem;
-                    }
-
-                    @media (min-width: $md){
-                        font-size: 0.875rem;
-                    }
-
-                    @media (min-width: $lg){
-                        font-size: 1rem;
-                    }
-
+                    
                     @media (min-width: $xl){
                         font-size: 1.125rem;
                     }   
