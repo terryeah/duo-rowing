@@ -1,3 +1,4 @@
+//about-body.js
 export default function AboutBody() {
     const section = document.createElement('section');
 

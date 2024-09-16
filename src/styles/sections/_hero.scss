@@ -6,34 +6,47 @@ div {
     .hero-image {
         width: 100%;
     }
-    
 
-    @media only screen and (max-width: 639px) {
-        h1{
-            font-size: 4rem;
-            margin-left: 2rem;
-            margin-top: 10rem;
-        }
-    }
-    @media (min-width: $sm){
-        h1{
-            font-size: 6rem;
-            margin-left: 2rem;
-            margin-top: 10rem;
-        }
+}
+
+.container {
+    margin-top: 10rem;
+    margin-left: 2.5rem;
+    max-width: 540px; 
+
+    @media (min-width: $md){
+        max-width: 720px; 
     }
 
     @media (min-width: $lg){
-        h1{
-            font-size: 7rem;
-            margin-left: 4rem;
-        }
+        margin-left: 5rem;
+        max-width: 960px; 
     }
 
     @media (min-width: $xl){
-        h1{
-            font-size: 11rem;
-        }
+        max-width: 1140px;
+    }
+
+    @media (min-width: $xxl){
+        max-width: 1320px;
     }
 
 }
+
+.hero-container h1 {
+    font-size: 6rem; 
+    margin-bottom: 20px; 
+
+    @media (min-width: $lg){
+        font-size: 8rem; 
+    }
+
+    @media (min-width: $xl){
+        font-size: 10rem; 
+    }
+
+    @media (min-width: $xxl){
+        font-size: 11.25rem; 
+    }
+}
+

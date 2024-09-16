@@ -1,3 +1,4 @@
+//contact/index.js
 import Header from '../../components/global/header';
 import Nav from '../../components/global/nav';
 import hero from './hero';
@@ -15,17 +16,22 @@ export default function Contact() {
         <section class="hero">
             ${hero().outerHTML}
         </section>
-        <!-- Other home page content -->
+        <article class="contact-body">
+            ${ContactBody().outerHTML}
+        </article>
+        <section class="contact-form">
+            ${ContactForm().outerHTML}
+        </section>
+        <section class="contact-bottom">
+            ${Contactbottom().outerHTML}
+        </section>
+        ${createDivider('right-aligned').outerHTML}
     `;
 
     return `
         ${Header().outerHTML}
         ${Nav().outerHTML}
         ${contactPage.outerHTML}
-        ${ContactBody().outerHTML}
-        ${ContactForm().outerHTML}
-        ${Contactbottom().outerHTML}
-        ${createDivider('right-aligned').outerHTML}
         ${Footer().outerHTML}
     `;
 }

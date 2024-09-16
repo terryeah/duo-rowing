@@ -1,17 +1,14 @@
+// about/hero.js
 export default function Hero() {
-    //const aboutHero = document.createElement('div');
-    //aboutHero.innerHTML = '<h1>ABOUT</h1>';
-    //return aboutHero;
+    const aboutHero = document.createElement('section'); // Use <section> for semantics
+    aboutHero.className = 'hero-container'; // Add class for consistent styling
 
-    const aboutDiv = document.createElement('div');
-    const aboutImg = document.createElement('img');
+    // Add a container with an image inside it
+    aboutHero.innerHTML = `
+            <div class="container">
+                <img src="/images/about_01_large.webp" alt="About Image" />
+            </div>
+        `;
 
-    //heroDiv.className = 'image-wrapper';
-    //heroImg.className = 'hero-image';
-    aboutImg.src = '/images/about_01_large.webp';
-    aboutImg.alt = 'About Image';
-
-    aboutDiv.appendChild(aboutImg);
-
-    return aboutDiv;
+    return aboutHero;
 }
